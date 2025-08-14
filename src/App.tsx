@@ -51,25 +51,3 @@ function AppWithLanguage() {
 }
 
 export default AppWithLanguage;
-              <Header />
-              <main className="flex-1">
-                <Routes>
-                  <Route path="/" element={<HomePage />} />
-                  <Route path="/products" element={<ProductsPage />} />
-                  <Route path="/products/:id" element={<ProductDetail />} />
-                  <Route path="/cart" element={<CartPage />} />
-                  <Route path="/checkout" element={<CheckoutPage />} />
-                  <Route path="/account" element={<AccountPage />} />
-                  <Route path="/admin" element={<AdminDashboard />} />
-                </Routes>
-              </main>
-              <Footer />
-            </div>
-          </Router>
-        </CartProvider>
-      </AuthProvider>
-    </LanguageProvider>
-  );
-}
-
-export default App;
