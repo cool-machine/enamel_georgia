@@ -12,14 +12,45 @@ import CartPage from './pages/CartPage';
 import CheckoutPage from './pages/CheckoutPage';
 import AccountPage from './pages/AccountPage';
 import AdminDashboard from './pages/AdminDashboard';
+import { useLanguage } from './contexts/LanguageContext';
 
 function App() {
+  const { currentLanguage } = useLanguage();
+
+  return (
+    <AuthProvider>
+      <CartProvider>
+        <Router>
+          <div className={`min-h-screen bg-gray-50 flex flex-col ${currentLanguage === 'ka' ? 'georgian-text' : ''}`}>
+            <Header />
+            <main className="flex-1">
+              <Routes>
+                <Route path="/" element={<HomePage />} />
+                <Route path="/products" element={<ProductsPage />} />
+                <Route path="/products/:id" element={<ProductDetail />} />
+                <Route path="/cart" element={<CartPage />} />
+                <Route path="/checkout" element={<CheckoutPage />} />
+                <Route path="/account" element={<AccountPage />} />
+                <Route path="/admin" element={<AdminDashboard />} />
+              </Routes>
+            </main>
+            <Footer />
+          </div>
+        </Router>
+      </CartProvider>
+    </AuthProvider>
+  );
+}
+
+function AppWithLanguage() {
   return (
     <LanguageProvider>
-      <AuthProvider>
-        <CartProvider>
-          <Router>
-            <div className="min-h-screen bg-gray-50 flex flex-col">
+      <App />
+    </LanguageProvider>
+  );
+}
+
+export default AppWithLanguage;
               <Header />
               <main className="flex-1">
                 <Routes>

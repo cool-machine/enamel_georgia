@@ -1,3 +1,67 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Georgian Language Font Support */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@300;400;500;600;700&display=swap');
+
+/* Georgian text styling */
+.georgian-text {
+  font-family: 'Noto Sans Georgian', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.6;
+}
+
+.georgian-text h1, .georgian-text h2, .georgian-text h3 {
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+.georgian-text .text-xs {
+  line-height: 1.5;
+}
+
+.georgian-text .text-sm {
+  line-height: 1.5;
+}
+
+.georgian-text .text-base {
+  line-height: 1.6;
+}
+
+.georgian-text .text-lg {
+  line-height: 1.5;
+}
+
+.georgian-text .text-xl {
+  line-height: 1.4;
+}
+
+.georgian-text .text-2xl {
+  line-height: 1.3;
+}
+
+.georgian-text .text-3xl {
+  line-height: 1.2;
+}
+
+.georgian-text .text-4xl {
+  line-height: 1.1;
+}
+
+/* Fix button alignment for Georgian text */
+.georgian-text button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Fix input alignment for Georgian text */
+.georgian-text input {
+  line-height: 1.4;
+}
+
+/* Fix navigation alignment */
+.georgian-text nav a {
+  display: inline-flex;
+  align-items: center;
+}
