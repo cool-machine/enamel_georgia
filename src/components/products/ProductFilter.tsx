@@ -1,4 +1,5 @@
 import React from 'react';
+import { useLanguage } from '../../contexts/LanguageContext';
 
 interface ProductFilterProps {
   selectedCategory: string;
@@ -17,18 +18,20 @@ const ProductFilter: React.FC<ProductFilterProps> = ({
   priceRange,
   setPriceRange,
 }) => {
+  const { t } = useLanguage();
+
   return (
     <div className="bg-white rounded-lg shadow-sm border p-6 space-y-6">
       <div>
-        <h3 className="text-lg font-semibold text-gray-900 mb-4">Filters</h3>
+        <h3 className="text-lg font-semibold text-gray-900 mb-4">{t('filters.title')}</h3>
       </div>
 
       {/* Category Filter */}
       <div>
-        <h4 className="text-sm font-medium text-gray-900 mb-3">Category</h4>
+        <h4 className="text-sm font-medium text-gray-900 mb-3">{t('filters.category')}</h4>
         <div className="space-y-2">
           {[
-            { value: 'all', label: 'All Categories' },
+            { value: 'all', label: t('filters.allCategories') },
             { value: 'red', label: 'Rouge (Red)' },
             { value: 'blue', label: 'Bleu (Blue)' },
             { value: 'green', label: 'Vert (Green)' },
@@ -58,13 +61,13 @@ const ProductFilter: React.FC<ProductFilterProps> = ({
 
       {/* Type Filter */}
       <div>
-        <h4 className="text-sm font-medium text-gray-900 mb-3">Type</h4>
+        <h4 className="text-sm font-medium text-gray-900 mb-3">{t('filters.type')}</h4>
         <div className="space-y-2">
           {[
-            { value: 'all', label: 'All Types' },
-            { value: 'transparent', label: 'Transparents' },
-            { value: 'opaque', label: 'Opaques' },
-            { value: 'opale', label: 'Opales' },
+            { value: 'all', label: t('filters.allTypes') },
+            { value: 'transparent', label: t('filters.transparent') },
+            { value: 'opaque', label: t('filters.opaque') },
+            { value: 'opale', label: t('filters.opale') },
           ].map(type => (
             <label key={type.value} className="flex items-center">
               <input
@@ -83,7 +86,7 @@ const ProductFilter: React.FC<ProductFilterProps> = ({
 
       {/* Price Range */}
       <div>
-        <h4 className="text-sm font-medium text-gray-900 mb-3">Price Range (₾)</h4>
+        <h4 className="text-sm font-medium text-gray-900 mb-3">{t('filters.priceRange')}</h4>
         <div className="space-y-3">
           <div className="flex items-center space-x-3">
             <input
@@ -94,7 +97,7 @@ const ProductFilter: React.FC<ProductFilterProps> = ({
               onChange={(e) => setPriceRange([parseInt(e.target.value) || 0, priceRange[1]])}
               className="w-20 px-2 py-1 border border-gray-300 rounded text-sm focus:outline-none focus:ring-2 focus:ring-red-800"
             />
-            <span className="text-gray-500">to</span>
+            <span className="text-gray-500">{t('filters.to')}</span>
             <input
               type="number"
               min="0"
@@ -124,7 +127,7 @@ const ProductFilter: React.FC<ProductFilterProps> = ({
         }}
         className="w-full text-red-800 hover:text-red-900 text-sm font-medium"
       >
-        Clear All Filters
+        {t('filters.clearAll')}
       </button>
     </div>
   );

@@ -1,8 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Star, Shield, Truck, Award } from 'lucide-react';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const HomePage: React.FC = () => {
+  const { t } = useLanguage();
+  
   return (
     <div className="space-y-0">
       {/* Hero Section */}
@@ -11,28 +14,27 @@ const HomePage: React.FC = () => {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
           <div className="max-w-3xl">
             <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
-              Authentic French
+              {t('home.hero.title')}
               <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-blue-100">
-                Enamel Artistry
+                {t('home.hero.subtitle')}
               </span>
             </h1>
             <p className="text-xl lg:text-2xl mb-8 text-gray-100 leading-relaxed">
-              Premium jewelry enamels from France's finest craftsmen, now available in Georgia. 
-              Create stunning pieces with colors that have inspired artists for centuries.
+              {t('home.hero.description')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 to="/products"
                 className="bg-white text-red-800 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors duration-200 flex items-center justify-center group"
               >
-                Shop Enamels
+                {t('home.hero.shopButton')}
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Link>
               <Link
                 to="/about"
                 className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-red-800 transition-colors duration-200 flex items-center justify-center"
               >
-                Learn More
+                {t('home.hero.learnButton')}
               </Link>
             </div>
           </div>
@@ -45,10 +47,10 @@ const HomePage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              Why Choose Émaux Georgia?
+              {t('home.features.title')}
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              We bring you the finest French enameling tradition with modern convenience
+              {t('home.features.subtitle')}
             </p>
           </div>
           
@@ -57,32 +59,32 @@ const HomePage: React.FC = () => {
               <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Award className="h-8 w-8 text-red-800" />
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Premium Quality</h3>
-              <p className="text-gray-600">Authentic French enamels from Emaux Soyer, trusted by artisans worldwide</p>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">{t('home.features.quality.title')}</h3>
+              <p className="text-gray-600">{t('home.features.quality.desc')}</p>
             </div>
             
             <div className="text-center p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow">
               <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Truck className="h-8 w-8 text-blue-800" />
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Fast Delivery</h3>
-              <p className="text-gray-600">Quick shipping throughout Georgia with secure packaging</p>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">{t('home.features.delivery.title')}</h3>
+              <p className="text-gray-600">{t('home.features.delivery.desc')}</p>
             </div>
             
             <div className="text-center p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow">
               <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Shield className="h-8 w-8 text-green-800" />
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Secure Shopping</h3>
-              <p className="text-gray-600">Safe transactions with multiple payment options</p>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">{t('home.features.secure.title')}</h3>
+              <p className="text-gray-600">{t('home.features.secure.desc')}</p>
             </div>
             
             <div className="text-center p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow">
               <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Star className="h-8 w-8 text-purple-800" />
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Expert Support</h3>
-              <p className="text-gray-600">Professional guidance for all your enameling projects</p>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">{t('home.features.support.title')}</h3>
+              <p className="text-gray-600">{t('home.features.support.desc')}</p>
             </div>
           </div>
         </div>
@@ -93,10 +95,10 @@ const HomePage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              Featured Enamel Colors
+              {t('home.featured.title')}
             </h2>
             <p className="text-xl text-gray-600">
-              Discover our most popular French enamel selections
+              {t('home.featured.subtitle')}
             </p>
           </div>
           
@@ -117,7 +119,7 @@ const HomePage: React.FC = () => {
                 </div>
                 <p className="text-gray-600 text-sm mb-4">Cherry red transparent enamel with brilliant clarity and vibrant red tones.</p>
                 <button className="w-full bg-red-800 text-white py-2 px-4 rounded-lg font-medium hover:bg-red-900 transition-colors">
-                  Add to Cart
+                  {t('products.addToCart')}
                 </button>
               </div>
             </div>
@@ -137,7 +139,7 @@ const HomePage: React.FC = () => {
                 </div>
                 <p className="text-gray-600 text-sm mb-4">Navy blue opaque enamel with deep, sophisticated blue tones.</p>
                 <button className="w-full bg-red-800 text-white py-2 px-4 rounded-lg font-medium hover:bg-red-900 transition-colors">
-                  Add to Cart
+                  {t('products.addToCart')}
                 </button>
               </div>
             </div>
@@ -157,7 +159,7 @@ const HomePage: React.FC = () => {
                 </div>
                 <p className="text-gray-600 text-sm mb-4">Rose opal enamel with delicate pink opalescent effects and subtle shimmer.</p>
                 <button className="w-full bg-red-800 text-white py-2 px-4 rounded-lg font-medium hover:bg-red-900 transition-colors">
-                  Add to Cart
+                  {t('products.addToCart')}
                 </button>
               </div>
             </div>
@@ -168,7 +170,7 @@ const HomePage: React.FC = () => {
               to="/products"
               className="inline-flex items-center bg-red-800 text-white px-8 py-3 rounded-lg font-semibold text-lg hover:bg-red-900 transition-colors group"
             >
-              View All Products
+              {t('home.featured.viewAll')}
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>
@@ -179,19 +181,19 @@ const HomePage: React.FC = () => {
       <section className="py-16 bg-red-800 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-            Stay Updated with New Arrivals
+            {t('home.newsletter.title')}
           </h2>
           <p className="text-xl mb-8 text-red-100 max-w-2xl mx-auto">
-            Be the first to know about new enamel colors, special offers, and enameling tips from our experts.
+            {t('home.newsletter.subtitle')}
           </p>
           <div className="max-w-md mx-auto flex flex-col sm:flex-row gap-4">
             <input
               type="email"
-              placeholder="Enter your email"
+              placeholder={t('home.newsletter.placeholder')}
               className="flex-1 px-4 py-3 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-white"
             />
             <button className="bg-white text-red-800 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-              Subscribe
+              {t('home.newsletter.subscribe')}
             </button>
           </div>
         </div>

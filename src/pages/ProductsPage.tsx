@@ -3,6 +3,7 @@ import { Search, Filter, Grid, List } from 'lucide-react';
 import ProductCard from '../components/products/ProductCard';
 import ProductFilter from '../components/products/ProductFilter';
 import { mockProducts } from '../data/mockProducts';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const ProductsPage: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -12,6 +13,8 @@ const ProductsPage: React.FC = () => {
   const [sortBy, setSortBy] = useState('name');
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
   const [showFilters, setShowFilters] = useState(false);
+
+  const { t } = useLanguage();
 
   const filteredProducts = useMemo(() => {
     let filtered = mockProducts.filter(product => {
@@ -48,9 +51,9 @@ const ProductsPage: React.FC = () => {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       {/* Header */}
       <div className="mb-8">
-        <h1 className="text-3xl font-bold text-gray-900 mb-4">French Enamel Collection</h1>
+        <h1 className="text-3xl font-bold text-gray-900 mb-4">{t('products.title')}</h1>
         <p className="text-gray-600 text-lg">
-          Discover our complete Emaux Soyer collection: Transparents, Opaques & Opales
+          {t('products.subtitle')}
         </p>
       </div>
 
@@ -61,7 +64,7 @@ const ProductsPage: React.FC = () => {
           <div className="flex-1 relative">
             <input
               type="text"
-              placeholder="Search by name, color, or enamel number..."
+              placeholder={t('products.search')}
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
               className="w-full px-4 py-3 pl-10 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent"
@@ -76,10 +79,10 @@ const ProductsPage: React.FC = () => {
               onChange={(e) => setSortBy(e.target.value)}
               className="px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-800"
             >
-              <option value="name">Sort by Name</option>
-              <option value="number">Sort by Number</option>
-              <option value="price-low">Price: Low to High</option>
-              <option value="price-high">Price: High to Low</option>
+            <option value="name">{t('products.sortByName')}</option>
+            <option value="number">{t('products.sortByNumber')}</option>
+            <option value="price-low">{t('products.sortByPriceLow')}</option>
+            <option value="price-high">{t('products.sortByPriceHigh')}</option>
             </select>
 
             {/* View Mode */}
@@ -104,7 +107,7 @@ const ProductsPage: React.FC = () => {
               className="lg:hidden px-4 py-3 bg-white border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50 flex items-center gap-2"
             >
               <Filter className="h-5 w-5" />
-              Filters
+              {t('products.filters')}
             </button>
           </div>
         </div>
@@ -127,13 +130,13 @@ const ProductsPage: React.FC = () => {
         <div className="flex-1">
           <div className="mb-4 flex justify-between items-center">
             <p className="text-gray-600">
-              Showing {filteredProducts.length} of {mockProducts.length} products
+              {t('products.showing')} {filteredProducts.length} {t('products.of')} {mockProducts.length} {t('products.products')}
             </p>
           </div>
 
           {filteredProducts.length === 0 ? (
             <div className="text-center py-12">
-              <p className="text-gray-500 text-lg">No products found matching your criteria.</p>
+              <p className="text-gray-500 text-lg">{t('products.noResults')}</p>
               <button
                 onClick={() => {
                   setSearchTerm('');
@@ -143,7 +146,7 @@ const ProductsPage: React.FC = () => {
                 }}
                 className="mt-4 text-red-800 hover:text-red-900 font-medium"
               >
-                Clear all filters
+                {t('products.clearFilters')}
               </button>
             </div>
           ) : (

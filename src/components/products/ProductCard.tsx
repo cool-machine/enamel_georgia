@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { ShoppingCart, Eye } from 'lucide-react';
 import { Product } from '../../data/mockProducts';
 import { useCart } from '../../contexts/CartContext';
+import { useLanguage } from '../../contexts/LanguageContext';
 
 interface ProductCardProps {
   product: Product;
@@ -11,6 +12,7 @@ interface ProductCardProps {
 
 const ProductCard: React.FC<ProductCardProps> = ({ product, viewMode = 'grid' }) => {
   const { addItem } = useCart();
+  const { t } = useLanguage();
 
   const handleAddToCart = (e: React.MouseEvent) => {
     e.preventDefault();
@@ -49,14 +51,14 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, viewMode = 'grid' })
                   className="bg-red-800 text-white px-4 py-2 rounded-lg hover:bg-red-900 transition-colors flex items-center gap-2 text-sm"
                 >
                   <ShoppingCart className="h-4 w-4" />
-                  Add to Cart
+                  {t('products.addToCart')}
                 </button>
                 <Link
                   to={`/products/${product.id}`}
                   className="border border-gray-300 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-50 transition-colors flex items-center gap-2 text-sm"
                 >
                   <Eye className="h-4 w-4" />
-                  View Details
+                  {t('products.viewDetails')}
                 </Link>
               </div>
             </div>
@@ -96,7 +98,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, viewMode = 'grid' })
               className="flex-1 bg-red-800 text-white py-2 px-4 rounded-lg font-medium hover:bg-red-900 transition-colors flex items-center justify-center gap-2"
             >
               <ShoppingCart className="h-4 w-4" />
-              Add to Cart
+              {t('products.addToCart')}
             </button>
           </div>
         </div>
