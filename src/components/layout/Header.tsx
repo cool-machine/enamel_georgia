@@ -23,9 +23,9 @@ const Header: React.FC = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
             <Palette className="h-8 w-8 text-red-800" />
-            <div className="flex flex-col">
-              <span className="text-xl font-bold text-red-800">{t('header.title')}</span>
-              <span className="text-xs text-gray-600 -mt-1">{t('header.subtitle')}</span>
+            <div className="flex flex-col min-w-0">
+              <span className="text-lg lg:text-xl font-bold text-red-800 leading-tight whitespace-nowrap">{t('header.title')}</span>
+              <span className="text-xs text-gray-600 leading-tight whitespace-nowrap">{t('header.subtitle')}</span>
             </div>
           </Link>
 

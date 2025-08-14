@@ -15,7 +15,7 @@ const translations = {
   en: {
     // Header
     'header.title': 'Émaux Georgia',
-    'header.subtitle': 'French Enamel Artistry',
+    'header.subtitle': 'Georgian Enamel Colors',
     'header.home': 'Home',
     'header.products': 'Products',
     'header.about': 'About',
@@ -145,7 +145,7 @@ const translations = {
   ka: {
     // Header
     'header.title': 'ემოხი საქართველო',
-    'header.subtitle': 'ფრანგული მინანქრის ხელოვნება',
+    'header.subtitle': 'ქართული მინანქრის ფერები',
     'header.home': 'მთავარი',
     'header.products': 'პროდუქტები',
     'header.about': 'ჩვენ შესახებ',
