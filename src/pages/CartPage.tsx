@@ -46,11 +46,11 @@ const CartPage: React.FC = () => {
                 <div key={item.id} className="p-6">
                   <div className="flex items-center gap-6">
                     {/* Enamel Image */}
-                    <div className="w-20 h-20 rounded-lg shrink-0 overflow-hidden bg-gray-100">
+                    <div className="w-16 h-16 rounded-lg shrink-0 overflow-hidden bg-gray-100">
                       <img 
                         src={item.image} 
                         alt={item.name}
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-cover object-center"
                         onError={(e) => {
                           e.currentTarget.style.display = 'none';
                           e.currentTarget.parentElement!.style.backgroundColor = '#f3f4f6';

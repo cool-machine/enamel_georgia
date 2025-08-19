@@ -32,11 +32,11 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, viewMode = 'grid' })
       <Link to={`/products/${product.id}`} className="block">
         <div className="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border p-6">
           <div className="flex gap-6">
-            <div className="w-24 h-24 rounded-lg shrink-0 overflow-hidden bg-gray-100">
+            <div className="w-16 h-16 rounded-lg shrink-0 overflow-hidden bg-gray-100">
               <img 
                 src={product.image} 
                 alt={product.name}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover object-center"
                 onError={(e) => {
                   e.currentTarget.style.display = 'none';
                   e.currentTarget.parentElement!.style.backgroundColor = '#f3f4f6';
@@ -79,11 +79,11 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, viewMode = 'grid' })
   return (
     <Link to={`/products/${product.id}`} className="block group">
       <div className="bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-200 overflow-hidden border">
-        <div className="aspect-square relative overflow-hidden bg-gray-100">
+        <div className="w-full h-32 relative overflow-hidden bg-gray-100 rounded-lg">
           <img 
             src={product.image} 
             alt={product.name}
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover object-center"
             onError={(e) => {
               e.currentTarget.style.display = 'none';
               e.currentTarget.parentElement!.style.backgroundColor = '#f3f4f6';

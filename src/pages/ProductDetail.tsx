@@ -48,16 +48,16 @@ const ProductDetail: React.FC = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
         {/* Product Image */}
         <div className="space-y-6">
-          <div 
-            className="aspect-square rounded-2xl overflow-hidden shadow-lg"
-            style={{ backgroundColor: product.colorCode }}
-          >
-            <div className="w-full h-full bg-gradient-to-br from-white/10 to-black/20 flex items-center justify-center">
-              <div className="text-center text-white">
-                <div className="text-2xl font-bold mb-2">{product.name}</div>
-                <div className="text-lg opacity-75">{product.colorCode}</div>
-              </div>
-            </div>
+          <div className="w-64 h-64 mx-auto rounded-2xl overflow-hidden shadow-lg bg-gray-100">
+            <img 
+              src={product.image} 
+              alt={product.name}
+              className="w-full h-full object-cover object-center"
+              onError={(e) => {
+                e.currentTarget.style.display = 'none';
+                e.currentTarget.parentElement!.style.backgroundColor = '#f3f4f6';
+              }}
+            />
           </div>
           
           {/* Enamel Information */}
