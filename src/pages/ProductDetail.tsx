@@ -60,15 +60,14 @@ const ProductDetail: React.FC = () => {
             </div>
           </div>
           
-          {/* Color Preview Swatches */}
-          <div className="grid grid-cols-4 gap-3">
-            {[product.colorCode, product.colorCode + '80', product.colorCode + '60', product.colorCode + '40'].map((color, index) => (
-              <div
-                key={index}
-                className="aspect-square rounded-lg border-2 border-gray-200"
-                style={{ backgroundColor: color }}
-              />
-            ))}
+          {/* Enamel Information */}
+          <div className="bg-gray-50 rounded-xl p-4">
+            <h3 className="font-semibold text-gray-900 mb-2">Enamel Details</h3>
+            <div className="space-y-1 text-sm text-gray-600">
+              <div><span className="font-medium">Reference:</span> {product.enamelNumber}</div>
+              <div><span className="font-medium">Type:</span> {product.type.charAt(0).toUpperCase() + product.type.slice(1)}</div>
+              <div><span className="font-medium">Category:</span> {product.category}</div>
+            </div>
           </div>
         </div>
 

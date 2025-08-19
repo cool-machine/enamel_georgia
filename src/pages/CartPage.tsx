@@ -45,12 +45,17 @@ const CartPage: React.FC = () => {
               {cartState.items.map(item => (
                 <div key={item.id} className="p-6">
                   <div className="flex items-center gap-6">
-                    {/* Color Swatch */}
-                    <div 
-                      className="w-20 h-20 rounded-lg shrink-0"
-                      style={{ backgroundColor: item.color }}
-                    >
-                      <div className="w-full h-full bg-gradient-to-br from-white/20 to-black/20 rounded-lg"></div>
+                    {/* Enamel Image */}
+                    <div className="w-20 h-20 rounded-lg shrink-0 overflow-hidden bg-gray-100">
+                      <img 
+                        src={item.image} 
+                        alt={item.name}
+                        className="w-full h-full object-cover"
+                        onError={(e) => {
+                          e.currentTarget.style.display = 'none';
+                          e.currentTarget.parentElement!.style.backgroundColor = '#f3f4f6';
+                        }}
+                      />
                     </div>
                     
                     {/* Item Details */}

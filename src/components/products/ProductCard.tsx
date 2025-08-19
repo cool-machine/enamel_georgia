@@ -21,7 +21,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, viewMode = 'grid' })
       name: product.name,
       price: product.price,
       quantity: 1,
-      color: product.colorCode,
+      color: product.enamelNumber,
       size: '25g',
       image: product.image
     });
@@ -32,8 +32,16 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, viewMode = 'grid' })
       <Link to={`/products/${product.id}`} className="block">
         <div className="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border p-6">
           <div className="flex gap-6">
-            <div className="w-24 h-24 rounded-lg shrink-0 overflow-hidden" style={{ backgroundColor: product.colorCode }}>
-              <div className="w-full h-full bg-gradient-to-br from-white/20 to-black/20"></div>
+            <div className="w-24 h-24 rounded-lg shrink-0 overflow-hidden bg-gray-100">
+              <img 
+                src={product.image} 
+                alt={product.name}
+                className="w-full h-full object-cover"
+                onError={(e) => {
+                  e.currentTarget.style.display = 'none';
+                  e.currentTarget.parentElement!.style.backgroundColor = '#f3f4f6';
+                }}
+              />
             </div>
             <div className="flex-1">
               <div className="flex justify-between items-start mb-2">
@@ -71,7 +79,16 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, viewMode = 'grid' })
   return (
     <Link to={`/products/${product.id}`} className="block group">
       <div className="bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-200 overflow-hidden border">
-        <div className="aspect-square relative overflow-hidden" style={{ backgroundColor: product.colorCode }}>
+        <div className="aspect-square relative overflow-hidden bg-gray-100">
+          <img 
+            src={product.image} 
+            alt={product.name}
+            className="w-full h-full object-cover"
+            onError={(e) => {
+              e.currentTarget.style.display = 'none';
+              e.currentTarget.parentElement!.style.backgroundColor = '#f3f4f6';
+            }}
+          />
           <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-black/20"></div>
           <div className="absolute top-4 right-4">
             <span className="bg-white/90 backdrop-blur-sm text-gray-900 text-xs font-medium px-2 py-1 rounded-full">
