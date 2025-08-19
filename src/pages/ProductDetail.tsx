@@ -182,7 +182,7 @@ const ProductDetail: React.FC = () => {
               <div className="space-y-2">
                 <Shield className="h-8 w-8 text-red-800 mx-auto" />
                 <div className="text-sm font-medium">Quality Guarantee</div>
-                <div className="text-xs text-gray-500">Authentic French enamel</div>
+                <div className="text-xs text-gray-500">Premium quality enamel</div>
               </div>
               <div className="space-y-2">
                 <RotateCcw className="h-8 w-8 text-red-800 mx-auto" />

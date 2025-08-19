@@ -28,16 +28,16 @@ const translations = {
     'header.signout': 'Sign Out',
 
     // Homepage
-    'home.hero.title': 'Authentic French',
+    'home.hero.title': 'Premium Enamel',
     'home.hero.subtitle': 'Enamel Artistry',
-    'home.hero.description': 'Premium jewelry enamels from France\'s finest craftsmen, now available in Georgia. Create stunning pieces with colors that have inspired artists for centuries.',
+    'home.hero.description': 'Premium jewelry enamels from master artisans worldwide, now available in Georgia. Create stunning pieces with colors that have inspired artists for centuries.',
     'home.hero.shopButton': 'Shop Enamels',
     'home.hero.learnButton': 'Learn More',
     
     'home.features.title': 'Why Choose Émaux Georgia?',
-    'home.features.subtitle': 'We bring you the finest French enameling tradition with modern convenience',
+    'home.features.subtitle': 'We bring you the finest enameling traditions from around the world with modern convenience',
     'home.features.quality.title': 'Premium Quality',
-    'home.features.quality.desc': 'Authentic French enamels from Emaux Soyer, trusted by artisans worldwide',
+    'home.features.quality.desc': 'Premium quality enamels from renowned manufacturers, trusted by artisans worldwide',
     'home.features.delivery.title': 'Fast Delivery',
     'home.features.delivery.desc': 'Quick shipping throughout Georgia with secure packaging',
     'home.features.secure.title': 'Secure Shopping',
@@ -46,7 +46,7 @@ const translations = {
     'home.features.support.desc': 'Professional guidance for all your enameling projects',
 
     'home.featured.title': 'Featured Enamel Colors',
-    'home.featured.subtitle': 'Discover our most popular French enamel selections',
+    'home.featured.subtitle': 'Discover our most popular enamel selections from top manufacturers',
     'home.featured.viewAll': 'View All Products',
 
     'home.newsletter.title': 'Stay Updated with New Arrivals',
@@ -55,7 +55,7 @@ const translations = {
     'home.newsletter.subscribe': 'Subscribe',
 
     // Products
-    'products.title': 'French Enamel Collection',
+    'products.title': 'Premium Enamel Collection',
     'products.subtitle': 'Discover our complete Emaux Soyer collection: Transparents, Opaques & Opales',
     'products.search': 'Search by name, color, or enamel number...',
     'products.sortByName': 'Sort by Name',
@@ -94,7 +94,7 @@ const translations = {
     'detail.freeShipping': 'Free Shipping',
     'detail.freeShippingDesc': 'On orders over ₾100',
     'detail.qualityGuarantee': 'Quality Guarantee',
-    'detail.qualityDesc': 'Authentic French enamel',
+    'detail.qualityDesc': 'Premium quality enamel',
     'detail.easyReturns': 'Easy Returns',
     'detail.returnsDesc': '30-day return policy',
     'detail.specifications': 'Technical Specifications',
@@ -105,7 +105,7 @@ const translations = {
     // Cart
     'cart.title': 'Shopping Cart',
     'cart.empty': 'Your cart is empty',
-    'cart.emptyDesc': 'Looks like you haven\'t added any French enamels to your cart yet.',
+    'cart.emptyDesc': 'Looks like you haven\'t added any enamels to your cart yet.',
     'cart.continueShopping': 'Continue Shopping',
     'cart.items': 'Cart Items',
     'cart.size': 'Size',
@@ -119,8 +119,8 @@ const translations = {
 
     // Footer
     'footer.company': 'Émaux Georgia',
-    'footer.tagline': 'French Enamel Artistry',
-    'footer.description': 'Premium French enamels for jewelry making, bringing traditional craftsmanship to Georgian artisans since 2024.',
+    'footer.tagline': 'Premium Enamel Artistry',
+    'footer.description': 'Premium enamels for jewelry making, bringing traditional craftsmanship to Georgian artisans since 2024.',
     'footer.products': 'Products',
     'footer.customerService': 'Customer Service',
     'footer.contact': 'Contact Us',
@@ -158,16 +158,16 @@ const translations = {
     'header.signout': 'გასვლა',
 
     // Homepage
-    'home.hero.title': 'ავთენტური ფრანგული',
+    'home.hero.title': 'პრემიუმ მინანქარი',
     'home.hero.subtitle': 'მინანქრის ხელოვნება',
-    'home.hero.description': 'პრემიუმ სამკაულების მინანქრები საფრანგეთის საუკეთესო ოსტატებისგან, ახლა ხელმისაწვდომი საქართველოში. შექმენით თვალისმომჭრელი ნაწარმოები ისეთი ფერებით, რომლებიც საუკუნეებია შთააგონებს მხატვრებს.',
+    'home.hero.description': 'პრემიუმ სამკაულების მინანქრები მსოფლიოს საუკეთესო ოსტატებისგან, ახლა ხელმისაწვდომი საქართველოში. შექმენით თვალისმომჭრელი ნაწარმოები ისეთი ფერებით, რომლებიც საუკუნეებია შთააგონებს მხატვრებს.',
     'home.hero.shopButton': 'მინანქრების ყიდვა',
     'home.hero.learnButton': 'გაიგე მეტი',
     
     'home.features.title': 'რატომ აირჩიოთ ემოხი საქართველო?',
-    'home.features.subtitle': 'ჩვენ მოგაწვდით ფრანგული მინანქრის საუკეთესო ტრადიციას თანამედროვე სიმარტივით',
+    'home.features.subtitle': 'ჩვენ მოგაწვდით მსოფლიო მინანქრის საუკეთესო ტრადიციებს თანამედროვე სიმარტივით',
     'home.features.quality.title': 'პრემიუმ ხარისხი',
-    'home.features.quality.desc': 'ავთენტური ფრანგული მინანქრები Emaux Soyer-სგან, რომელსაც ენდობიან ოსტატები მთელ მსოფლიოში',
+    'home.features.quality.desc': 'პრემიუმ ხარისხის მინანქრები ცნობილი მწარმოებლებისგან, რომელსაც ენდობიან ოსტატები მთელ მსოფლიოში',
     'home.features.delivery.title': 'სწრაფი მიწოდება',
     'home.features.delivery.desc': 'სწრაფი მიწოდება მთელ საქართველოში უსაფრთხო შეფუთვით',
     'home.features.secure.title': 'უსაფრთხო შენაძენი',
@@ -176,7 +176,7 @@ const translations = {
     'home.features.support.desc': 'პროფესიონალური ხელმძღვანელობა თქვენი ყველა მინანქრის პროექტისთვის',
 
     'home.featured.title': 'გამორჩეული მინანქრის ფერები',
-    'home.featured.subtitle': 'აღმოაჩინეთ ჩვენი ყველაზე პოპულარული ფრანგული მინანქრის შერჩევანი',
+    'home.featured.subtitle': 'აღმოაჩინეთ ჩვენი ყველაზე პოპულარული მინანქრის შერჩევანი წამყვანი მწარმოებლებისგან',
     'home.featured.viewAll': 'ყველა პროდუქტის ნახვა',
 
     'home.newsletter.title': 'იყავით კურსში ახალ შემოსვლებზე',
@@ -185,7 +185,7 @@ const translations = {
     'home.newsletter.subscribe': 'გამოწერა',
 
     // Products
-    'products.title': 'ფრანგული მინანქრის კოლექცია',
+    'products.title': 'პრემიუმ მინანქრის კოლექცია',
     'products.subtitle': 'აღმოაჩინეთ ჩვენი სრული Emaux Soyer კოლექცია: გამჭვირვალე, მუქი და ოპალური',
     'products.search': 'ძიება სახელით, ფერით ან მინანქრის ნომრით...',
     'products.sortByName': 'დალაგება სახელით',
@@ -224,7 +224,7 @@ const translations = {
     'detail.freeShipping': 'უფასო მიწოდება',
     'detail.freeShippingDesc': '₾100-ზე მეტი შეკვეთებისთვის',
     'detail.qualityGuarantee': 'ხარისხის გარანტია',
-    'detail.qualityDesc': 'ავთენტური ფრანგული მინანქარი',
+    'detail.qualityDesc': 'პრემიუმ ხარისხის მინანქარი',
     'detail.easyReturns': 'მარტივი დაბრუნება',
     'detail.returnsDesc': '30-დღიანი დაბრუნების პოლიტიკა',
     'detail.specifications': 'ტექნიკური მახასიათებლები',
@@ -235,7 +235,7 @@ const translations = {
     // Cart
     'cart.title': 'საყიდლების კალათა',
     'cart.empty': 'თქვენი კალათა ცარიელია',
-    'cart.emptyDesc': 'როგორც ჩანს, ჯერ არ დაგიმატებიათ ფრანგული მინანქრები კალათაში.',
+    'cart.emptyDesc': 'როგორც ჩანს, ჯერ არ დაგიმატებიათ მინანქრები კალათაში.',
     'cart.continueShopping': 'ყიდვის გაგრძელება',
     'cart.items': 'კალათის ნივთები',
     'cart.size': 'ზომა',
@@ -249,8 +249,8 @@ const translations = {
 
     // Footer
     'footer.company': 'ემოხი საქართველო',
-    'footer.tagline': 'ფრანგული მინანქრის ხელოვნება',
-    'footer.description': 'პრემიუმ ფრანგული მინანქრები სამკაულების დასამზადებლად, ტრადიციული ოსტატობის მიწოდება ქართველ ოსტატებისთვის 2024 წლიდან.',
+    'footer.tagline': 'პრემიუმ მინანქრის ხელოვნება',
+    'footer.description': 'პრემიუმ მინანქრები სამკაულების დასამზადებლად, ტრადიციული ოსტატობის მიწოდება ქართველ ოსტატებისთვის 2024 წლიდან.',
     'footer.products': 'პროდუქტები',
     'footer.customerService': 'მომხმარებელთა სერვისი',
     'footer.contact': 'დაგვიკავშირდით',

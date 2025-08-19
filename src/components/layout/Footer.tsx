@@ -13,11 +13,11 @@ const Footer: React.FC = () => {
               <Palette className="h-6 w-6 text-red-400" />
               <div>
                 <div className="text-lg font-bold">Émaux Georgia</div>
-                <div className="text-sm text-gray-400">French Enamel Artistry</div>
+                <div className="text-sm text-gray-400">Premium Enamel Artistry</div>
               </div>
             </div>
             <p className="text-gray-400 text-sm">
-              Premium French enamels for jewelry making, bringing traditional craftsmanship 
+              Premium enamels for jewelry making, bringing traditional craftsmanship 
               to Georgian artisans since 2024.
             </p>
             <div className="flex space-x-4">
