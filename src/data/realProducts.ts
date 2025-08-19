@@ -71,6 +71,10 @@ export const realProducts: Product[] = [
   createProduct('transparent', '4046', 54),
   createProduct('transparent', '4940', 56),
   createProduct('transparent', '4942', 57),
+  
+  // HIGH QUALITY EMAUX SOYER TRANSPARENT ENAMELS
+  createProduct('transparent', '31', 48), // Ruby 31 - high quality
+  createProduct('transparent', '272_hq', 47), // Blue 272 - high quality Emaux Soyer
 
   // OPALE ENAMELS - Based on actual images in /opale_colors/
   createProduct('opale', '08', 55),
@@ -128,4 +132,20 @@ export const realProducts: Product[] = [
   createProduct('opaque', '92', 42),
   createProduct('opaque', '98', 41),
   createProduct('opaque', 'r1_c8', 44),
+  
+  // HIGH QUALITY EMAUX SOYER OPAQUE ENAMELS
+  createProduct('opaque', '36_hq', 44), // Black 36 - high quality Emaux Soyer
+  createProduct('opaque', '59_hq', 43), // White 59P - high quality Emaux Soyer
+  createProduct('opaque', '66_hq', 45), // Blue 66F - high quality Emaux Soyer
+  createProduct('opaque', '71_hq', 44), // Gray 71 - high quality Emaux Soyer
+  createProduct('opaque', '75_hq', 46), // Yellow 75 - high quality Emaux Soyer
+  createProduct('opaque', '80_hq', 47), // Turquoise 80F - high quality Emaux Soyer
+  createProduct('opaque', '83_hq', 42), // Green 83 - high quality Emaux Soyer
+  createProduct('opaque', '95_hq', 43), // Yellow 95 - high quality Emaux Soyer
+  createProduct('opaque', '268_hq', 48), // Brown 268 - high quality Emaux Soyer
+  createProduct('opaque', '283_hq', 45), // Rose 283 - high quality Emaux Soyer
+  createProduct('opaque', '126_hq', 46), // Turquoise 126 - high quality Emaux Soyer
+  createProduct('opaque', '127_hq', 47), // Turquoise 127 - high quality Emaux Soyer
+  createProduct('opaque', '56_hq', 44), // Black 56 - high quality Emaux Soyer
+  createProduct('opaque', '299_hq', 48), // Rose 299F - high quality Emaux Soyer
 ];
