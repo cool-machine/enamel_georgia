@@ -23,3 +23,10 @@ dist-ssr
 *.sln
 *.sw?
 .env
+
+# AI Tool Configuration Files
+CLAUDE.md
+.bolt/
+.claude/
+.cursor/
+.windsurf/
