@@ -95,10 +95,6 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, viewMode = 'grid' })
               {product.type.toUpperCase()}
             </span>
           </div>
-          <div className="absolute bottom-4 left-4 text-white">
-            <div className="text-xs font-medium opacity-90">{product.category.toUpperCase()}</div>
-            <div className="text-sm font-bold opacity-75 font-mono">{product.enamelNumber}</div>
-          </div>
         </div>
         <div className="p-6">
           <div className="flex justify-between items-start mb-2">
