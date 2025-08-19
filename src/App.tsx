@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { CartProvider } from './contexts/CartContext';
 import { AuthProvider } from './contexts/AuthContext';
-import { LanguageProvider } from './contexts/LanguageContext';
+import { LanguageProvider, useLanguage } from './contexts/LanguageContext';
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
 import HomePage from './pages/HomePage';
@@ -12,9 +12,8 @@ import CartPage from './pages/CartPage';
 import CheckoutPage from './pages/CheckoutPage';
 import AccountPage from './pages/AccountPage';
 import AdminDashboard from './pages/AdminDashboard';
-import { useLanguage } from './contexts/LanguageContext';
 
-function App() {
+function AppContent() {
   const { currentLanguage } = useLanguage();
 
   return (
@@ -42,12 +41,12 @@ function App() {
   );
 }
 
-function AppWithLanguage() {
+function App() {
   return (
     <LanguageProvider>
-      <App />
+      <AppContent />
     </LanguageProvider>
   );
 }
 
-export default AppWithLanguage;
+export default App;
