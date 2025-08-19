@@ -79,7 +79,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, viewMode = 'grid' })
   return (
     <Link to={`/products/${product.id}`} className="block group">
       <div className="bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-200 overflow-hidden border">
-        <div className="w-full h-32 relative overflow-hidden bg-gray-100 rounded-lg">
+        <div className="w-32 h-32 relative overflow-hidden bg-gray-100 rounded-lg mx-auto">
           <img 
             src={product.image} 
             alt={product.name}
