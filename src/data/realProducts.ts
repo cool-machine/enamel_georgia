@@ -34,7 +34,7 @@ const createProduct = (
     colorCode: '', // Use empty string - we'll display actual image instead
     category: type, // Group by enamel type
     type,
-    image: `/${folder}/${reference}.jpg`,
+    image: `${import.meta.env.BASE_URL}${folder}/${reference}.jpg`,
     inStock: true,
     quantity: Math.floor(Math.random() * 20) + 5, // Random quantity between 5-24
     enamelNumber: `${typePrefix}-${reference}`,
