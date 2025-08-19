@@ -20,7 +20,7 @@ function App() {
   return (
     <AuthProvider>
       <CartProvider>
-        <Router>
+        <Router basename="/enamel_georgia">
           <div className={`min-h-screen bg-gray-50 flex flex-col ${currentLanguage === 'ka' ? 'georgian-text' : ''}`}>
             <Header />
             <main className="flex-1">
