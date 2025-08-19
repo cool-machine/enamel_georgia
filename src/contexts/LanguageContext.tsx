@@ -165,7 +165,7 @@ const translations = {
     'home.hero.learnButton': 'გაიგე მეტი',
     
     'home.features.title': 'რატომ აირჩიოთ ემოხი საქართველო?',
-    'home.features.subtitle': 'ჩვენ მოგაწვდით მსოფლიო მინანქრის საუკეთესო ტრადიციებს თანამედროვე სიმარტივით',
+    'home.features.subtitle': 'ჩვენ მოგაწვდით მსოფლიოს მინანქრის საუკეთესო ტრადიციებს თანამედროვე სიმარტივით',
     'home.features.quality.title': 'პრემიუმ ხარისხი',
     'home.features.quality.desc': 'პრემიუმ ხარისხის მინანქრები ცნობილი მწარმოებლებისგან, რომელსაც ენდობიან ოსტატები მთელ მსოფლიოში',
     'home.features.delivery.title': 'სწრაფი მიწოდება',
@@ -176,7 +176,7 @@ const translations = {
     'home.features.support.desc': 'პროფესიონალური ხელმძღვანელობა თქვენი ყველა მინანქრის პროექტისთვის',
 
     'home.featured.title': 'გამორჩეული მინანქრის ფერები',
-    'home.featured.subtitle': 'აღმოაჩინეთ ჩვენი ყველაზე პოპულარული მინანქრის შერჩევანი წამყვანი მწარმოებლებისგან',
+    'home.featured.subtitle': 'აღმოაჩინეთ ჩვენი ყველაზე პოპულარული მინანქრის შერჩევანი',
     'home.featured.viewAll': 'ყველა პროდუქტის ნახვა',
 
     'home.newsletter.title': 'იყავით კურსში ახალ შემოსვლებზე',
