@@ -90,11 +90,6 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, viewMode = 'grid' })
             }}
           />
           <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-black/20"></div>
-          <div className="absolute top-4 right-4">
-            <span className="bg-white/90 backdrop-blur-sm text-gray-900 text-xs font-medium px-2 py-1 rounded-full">
-              {product.type.toUpperCase()}
-            </span>
-          </div>
         </div>
         <div className="p-6">
           <div className="flex justify-between items-start mb-2">
