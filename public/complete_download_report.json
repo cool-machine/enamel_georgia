@@ -1,0 +1,904 @@
+{
+  "summary": {
+    "total": 166,
+    "success": 165,
+    "failed": 1,
+    "skipped": 0
+  },
+  "type_counts": {
+    "transparent": 1,
+    "opaque": 110,
+    "opal": 0,
+    "unknown": 0
+  },
+  "results": [
+    {
+      "product_url": "https://www.emaux-soyer.com/en/bleu-62f-en-poudre.html",
+      "color_reference": "62F",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/o/p/opq-0062.jpg",
+      "filename": "public/opaques/62F_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/bleu-68-f-sans-plomb.html",
+      "color_reference": "BLEU68",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/o/p/opq-0068.jpg",
+      "filename": "public/opaques/BLEU68_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/blanc-teinte-97-p.html",
+      "color_reference": "TEINTE97",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/o/p/opq-0097.jpg",
+      "filename": "public/opaques/TEINTE97_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/noir-55-f-morceaux.html",
+      "color_reference": "NOIR55",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/o/p/opq-0055f_1.jpg",
+      "filename": "public/opaques/NOIR55_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/turquoise-opaque-clair-126.html",
+      "color_reference": "CLAIR126",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/1/2/126_1.jpg",
+      "filename": "public/opaques/CLAIR126_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/turquoise-opaque-fonce-127.html",
+      "color_reference": "FONCE127",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/1/2/127_edited_2.jpg",
+      "filename": "public/opaques/FONCE127_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/jaune-3063-transparent-en-poudre-3444.html",
+      "color_reference": "JAUNE3063",
+      "enamel_type": "transparent",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/p/3/p3063_jaune__3.jpg",
+      "filename": "public/transparent_colors/JAUNE3063_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/violet-431-f-powder.html",
+      "color_reference": "431",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/4/3/431f_2.jpg",
+      "filename": "public/opaques/431_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/rose-2004-en-poudre.html",
+      "color_reference": "2004",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/s/k/skm_c30823120608080_dernier_-_1.jpg",
+      "filename": "public/opaques/2004_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/vert-d-eau-270.html",
+      "color_reference": "EAU270",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/2/7/270_edited_5.jpg",
+      "filename": "public/opaques/EAU270_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/fondant-pour-cuivre-n-1-sans-plomb-en-poudre.html",
+      "color_reference": "N1",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/t/s/tsp-0001_1__2_1.jpg",
+      "filename": "public/opaques/N1_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/rubis-31.html",
+      "color_reference": "RUBIS31",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/p/0/p0031_rogn_.jpg",
+      "filename": "public/opaques/RUBIS31_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/anis-94-en-poudre.html",
+      "color_reference": "94",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/o/p/opq-0094.jpg",
+      "filename": "public/opaques/94_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/bleu-195-f-en-poudre.html",
+      "color_reference": "195",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/o/p/opq-0195.jpg",
+      "filename": "public/opaques/195_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/bleu-196-f-poudre.html",
+      "color_reference": "196",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/o/p/opq-0196.jpg",
+      "filename": "public/opaques/196_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/gris-bleu-197-f-en-poudre.html",
+      "color_reference": "197",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/o/p/opq-0197f_3.jpg",
+      "filename": "public/opaques/197_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/gris-bleu-200-poudre.html",
+      "color_reference": "200",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/o/p/opq-0200.jpg",
+      "filename": "public/opaques/200_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/orange-291-en-poudre.html",
+      "color_reference": "291",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/o/p/opq-0291_2.jpg",
+      "filename": "public/opaques/291_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/rose-297-en-poudre.html",
+      "color_reference": "297",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/o/p/opq-0297.jpg",
+      "filename": "public/opaques/297_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/rose-298-f-en-poudre.html",
+      "color_reference": "298",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/poudre/opq-0298.jpg",
+      "filename": "public/opaques/298_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/marron-302-c-en-poudre.html",
+      "color_reference": "MARRON302",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/o/p/opq-0302c.jpg",
+      "filename": "public/opaques/MARRON302_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/gris-304-en-poudre.html",
+      "color_reference": "304",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/o/p/opq-0304.jpg",
+      "filename": "public/opaques/304_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/marron-307-en-poudre.html",
+      "color_reference": "307",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/o/p/opq-0307.jpg",
+      "filename": "public/opaques/307_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/marron-309-en-poudre.html",
+      "color_reference": "309",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/o/p/opq-0309.jpg",
+      "filename": "public/opaques/309_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/violet-430-f-en-poudre.html",
+      "color_reference": "430",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/o/p/opq-0430.jpg",
+      "filename": "public/opaques/430_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/orange-491-en-poudre.html",
+      "color_reference": "491",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/o/p/opq-0491_2.jpg",
+      "filename": "public/opaques/491_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/bleu-marine-605-poudre.html",
+      "color_reference": "605",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/o/p/opq-0605.jpg",
+      "filename": "public/opaques/605_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/peche-631-en-poudre.html",
+      "color_reference": "631",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/poudre/opq-0631.jpg",
+      "filename": "public/opaques/631_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/vert-anglais-632-en-poudre.html",
+      "color_reference": "632",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/poudre/opq-0632.jpg",
+      "filename": "public/opaques/632_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/lilas-633-en-poudre.html",
+      "color_reference": "633",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/poudre/opq-0633.jpg",
+      "filename": "public/opaques/633_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/vert-olive-636-en-poudre.html",
+      "color_reference": "636",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/o/p/opq-0636.jpg",
+      "filename": "public/opaques/636_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/celadon-637-f-en-poudre.html",
+      "color_reference": "637",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/o/p/opq-0637.jpg",
+      "filename": "public/opaques/637_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/fondant-pour-or-n-2-en-poudre.html",
+      "color_reference": "2",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/poudre/tsp-0002.jpg",
+      "filename": "public/opaques/2_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/fondant-pour-argent-n-3-en-morceaux.html",
+      "color_reference": "3",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/t/s/tsp-0003.jpg",
+      "filename": "public/opaques/3_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/bleu-4-en-poudre.html",
+      "color_reference": "4",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/poudre/tsp-0004.jpg",
+      "filename": "public/opaques/4_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/vert-10-en-poudre.html",
+      "color_reference": "10",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/poudre/tsp-0010.jpg",
+      "filename": "public/opaques/10_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/gris-bleu-13-en-poudre.html",
+      "color_reference": "13",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/t/s/tsp-0013.jpg",
+      "filename": "public/opaques/13_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/jaune-15-en-poudre.html",
+      "color_reference": "15",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/t/s/tsp-0015.jpg",
+      "filename": "public/opaques/15_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/violet-20-en-morceaux.html",
+      "color_reference": "20",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/morceaux/tsp-0020.jpg",
+      "filename": "public/opaques/20_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/bleu-23-en-poudre.html",
+      "color_reference": "23",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/t/s/tsp-0023.jpg",
+      "filename": "public/opaques/23_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/bleu-25-en-poudre.html",
+      "color_reference": "25",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/t/s/tsp-0025.jpg",
+      "filename": "public/opaques/25_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/bleu-26-en-poudre.html",
+      "color_reference": "26",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/t/s/tsp-0026.jpg",
+      "filename": "public/opaques/26_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/bleu-27-en-grains.html",
+      "color_reference": "27",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/grains/tsp-0027.jpg",
+      "filename": "public/opaques/27_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/jaune-28-en-poudre.html",
+      "color_reference": "28",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/t/s/tsp-0028.jpg",
+      "filename": "public/opaques/28_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/lilas-29-en-poudre.html",
+      "color_reference": "29",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/t/s/tsp-0029.jpg",
+      "filename": "public/opaques/29_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/marron-32-en-poudre.html",
+      "color_reference": "32",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/t/s/tsp-0032.jpg",
+      "filename": "public/opaques/32_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/lilas-33-en-poudre.html",
+      "color_reference": "33",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/t/s/tsp-0033_1.jpg",
+      "filename": "public/opaques/33_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/orange-38-en-poudre.html",
+      "color_reference": "38",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/t/s/tsp-0038.jpg",
+      "filename": "public/opaques/38_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/turquoise-45-en-poudre.html",
+      "color_reference": "45",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/t/s/tsp-0045.jpg",
+      "filename": "public/opaques/45_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/vert-46-en-poudre.html",
+      "color_reference": "46",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/t/s/tsp-0046.jpg",
+      "filename": "public/opaques/46_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/vert-47-en-poudre.html",
+      "color_reference": "47",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/t/s/tsp-0047.jpg",
+      "filename": "public/opaques/47_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/vert-49-en-morceaux.html",
+      "color_reference": "49",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/t/s/tsp-0049.jpg",
+      "filename": "public/opaques/49_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/vert-50-poudre.html",
+      "color_reference": "50",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/t/s/tsp-0050.jpg",
+      "filename": "public/opaques/50_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/vert-51-en-poudre.html",
+      "color_reference": "51",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/t/s/tsp-0051.jpg",
+      "filename": "public/opaques/51_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/vert-52-en-poudre.html",
+      "color_reference": "52",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/t/s/tsp-0052.jpg",
+      "filename": "public/opaques/52_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/violet-53-en-poudre.html",
+      "color_reference": "53",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/t/s/tsp-0053.jpg",
+      "filename": "public/opaques/53_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/bleu-100-en-poudre.html",
+      "color_reference": "100",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/t/s/tsp-0100_1.jpg",
+      "filename": "public/opaques/100_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/lilas-111-en-poudre.html",
+      "color_reference": "111",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/t/s/tsp-0111.jpg",
+      "filename": "public/opaques/111_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/vert-119-en-poudre.html",
+      "color_reference": "119",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/0/1/0119_2.jpg",
+      "filename": "public/opaques/119_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/gris-bleu-161-b-en-poudre.html",
+      "color_reference": "BLEU161",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/t/s/tsp-0161b.jpg",
+      "filename": "public/opaques/BLEU161_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/bleu-163-en-poudre.html",
+      "color_reference": "163",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/t/s/tsp-0163_4.jpg",
+      "filename": "public/opaques/163_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/marron-172-en-poudre.html",
+      "color_reference": "172",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/t/s/tsp-0172bis.jpg",
+      "filename": "public/opaques/172_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/marron-173-en-poudre.html",
+      "color_reference": "173",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/t/s/tsp-0173.jpg",
+      "filename": "public/opaques/173_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/marron-173-c-en-poudre.html",
+      "color_reference": "MARRON173",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/t/s/tsp-0173c.jpg",
+      "filename": "public/opaques/MARRON173_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/marron-clair-174-c-en-poudre.html",
+      "color_reference": "CLAIR174",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/t/s/tsp-0174c.jpg",
+      "filename": "public/opaques/CLAIR174_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/marron-175-en-poudre.html",
+      "color_reference": "175",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/t/s/tsp-0175.jpg",
+      "filename": "public/opaques/175_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/marron-176-en-poudre.html",
+      "color_reference": "176",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/t/s/tsp-0176.jpg",
+      "filename": "public/opaques/176_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/noir-177-en-poudre.html",
+      "color_reference": "177",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/t/s/tsp-0177_2.jpg",
+      "filename": "public/opaques/177_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/turquoise-185-en-poudre.html",
+      "color_reference": "185",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/t/s/tsp-0185.jpg",
+      "filename": "public/opaques/185_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/vert-188-en-poudre.html",
+      "color_reference": "188",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/t/s/tsp-0188_1.jpg",
+      "filename": "public/opaques/188_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/vert-189-en-poudre.html",
+      "color_reference": "189",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/poudre/tsp-0189.jpg",
+      "filename": "public/opaques/189_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/violet-191-en-poudre.html",
+      "color_reference": "191",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/t/s/tsp-0191.jpg",
+      "filename": "public/opaques/191_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/violet-194-en-poudre.html",
+      "color_reference": "194",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/t/s/tsp-0194.jpg",
+      "filename": "public/opaques/194_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/bleu-237-en-poudre.html",
+      "color_reference": "237",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/t/s/tsp-0237.jpg",
+      "filename": "public/opaques/237_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/bleu-238-en-poudre.html",
+      "color_reference": "238",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/t/s/tsp-0238_3.jpg",
+      "filename": "public/opaques/238_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/bleu-238-b-en-poudre.html",
+      "color_reference": "BLEU238",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/t/s/tsp-0238b.jpg",
+      "filename": "public/opaques/BLEU238_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/bleu-239-en-poudre.html",
+      "color_reference": "239",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/t/s/tsp-0239.jpg",
+      "filename": "public/opaques/239_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/turquoise-240-en-grains.html",
+      "color_reference": "240",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/grains/tsp-0240.jpg",
+      "filename": "public/opaques/240_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/bleu-241-en-poudre.html",
+      "color_reference": "241",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/t/s/tsp-0241_2.jpg",
+      "filename": "public/opaques/241_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/turquoise-250-en-grains.html",
+      "color_reference": "250",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/grains/tsp-0250.jpg",
+      "filename": "public/opaques/250_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/bleu-251-f-poudre.html",
+      "color_reference": "251",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/t/s/tsp-0251_3.jpg",
+      "filename": "public/opaques/251_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/vert-256-en-poudre.html",
+      "color_reference": "256",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/t/s/tsp-0256.jpg",
+      "filename": "public/opaques/256_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/fondant-de-finition-518-en-poudre.html",
+      "color_reference": "518",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/poudre/tsp-0518.jpg",
+      "filename": "public/opaques/518_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/gris-violace-600-en-poudre.html",
+      "color_reference": "600",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/t/s/tsp-0600.jpg",
+      "filename": "public/opaques/600_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/gris-vert-601-en-poudre.html",
+      "color_reference": "601",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/t/s/tsp-0601.jpg",
+      "filename": "public/opaques/601_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/gris-terre-602-en-poudre.html",
+      "color_reference": "602",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/t/s/tsp-0602.jpg",
+      "filename": "public/opaques/602_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/gris-souris-603-en-poudre.html",
+      "color_reference": "603",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/t/s/tsp-0603.jpg",
+      "filename": "public/opaques/603_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/gris-turquoise-604-en-poudre.html",
+      "color_reference": "604",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/t/s/tsp-0604.jpg",
+      "filename": "public/opaques/604_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/marron-614-en-poudre.html",
+      "color_reference": "614",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/t/s/tsp-0614.jpg",
+      "filename": "public/opaques/614_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/fondant-de-finition-619-en-poudre.html",
+      "color_reference": "619",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/poudre/tsp-0619.jpg",
+      "filename": "public/opaques/619_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/orange-620-en-poudre.html",
+      "color_reference": "620",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/poudre/tsp-0620.jpg",
+      "filename": "public/opaques/620_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/rose-1044-en-poudre.html",
+      "color_reference": "1044",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/t/s/tsp-1044_2.jpg",
+      "filename": "public/opaques/1044_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/rose-1046-en-poudre.html",
+      "color_reference": "1046",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/t/s/tsp-1046.jpg",
+      "filename": "public/opaques/1046_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/rose-1940-en-poudre.html",
+      "color_reference": "1940",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/t/s/tsp-1940.jpg",
+      "filename": "public/opaques/1940_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/rose-1942-en-poudre.html",
+      "color_reference": "1942",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/t/s/tsp-1942_1.jpg",
+      "filename": "public/opaques/1942_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/red-43-powder.html",
+      "color_reference": "43",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/r/o/rouge_43.jpg",
+      "filename": "public/opaques/43_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/vert-pomme-285.html",
+      "color_reference": "POMME285",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/2/8/285.jpg",
+      "filename": "public/opaques/POMME285_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/vert-tilleul-286-150g.html",
+      "color_reference": "286",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/0/2/0286.jpg",
+      "filename": "public/opaques/286_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/pourpre-284.html",
+      "color_reference": "POURPRE284",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/0/2/0284_4.jpg",
+      "filename": "public/opaques/POURPRE284_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/blanc-160-en-poudre.html",
+      "color_reference": "160",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/o/p/opq-0160.jpg",
+      "filename": "public/opaques/160_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/violet-104-en-poudre.html",
+      "color_reference": "104",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/t/s/tsp-0104_1.jpg",
+      "filename": "public/opaques/104_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/turquoise-184-en-poudre.html",
+      "color_reference": "184",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/t/s/tsp-0184.jpg",
+      "filename": "public/opaques/184_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/jaune-30-en-poudre.html",
+      "color_reference": "30",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/t/s/tsp-0030.jpg",
+      "filename": "public/opaques/30_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/vert-48-en-poudre.html",
+      "color_reference": "48",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/t/s/tsp-0048.jpg",
+      "filename": "public/opaques/48_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/rouge-296-en-poudre.html",
+      "color_reference": "296",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/o/p/opq-0296_2.jpg",
+      "filename": "public/opaques/296_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/rouge-42-poudre.html",
+      "color_reference": "42",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/s/k/skm_c224e17010915500_0001_1_1.jpg",
+      "filename": "public/opaques/42_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/rouge-288-en-poudre-800-c-840-c.html",
+      "color_reference": "288",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/2/8/288.jpg",
+      "filename": "public/opaques/288_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/rouge-flamme-287.html",
+      "color_reference": "FLAMME287",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/0/2/0287_2_2.jpg",
+      "filename": "public/opaques/FLAMME287_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/fondant-pour-cuivre-n-1-en-poudre.html",
+      "color_reference": "1",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/t/s/tsp-0001_1__1.jpg",
+      "filename": "public/opaques/1_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/red-289-powder.html",
+      "color_reference": "289",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/o/p/opq-0289_3.jpg",
+      "filename": "public/opaques/289_hq.jpg",
+      "status": "success"
+    },
+    {
+      "product_url": "https://www.emaux-soyer.com/en/turquoise-273-poudre.html",
+      "color_reference": "273",
+      "enamel_type": "opaque",
+      "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/2/7/273_1.jpg",
+      "filename": "public/opaques/273_hq.jpg",
+      "status": "success"
+    }
+  ]
+}
