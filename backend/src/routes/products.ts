@@ -1,6 +1,7 @@
 import express from 'express';
 import { ProductController } from '@/controllers/productController';
 import { validate, validateQuery, validateParams, productSchemas } from '@/middleware/validation';
+import { authenticate, adminOnly, getUserFromToken } from '@/middleware/auth';
 import Joi from 'joi';
 
 const router = express.Router();
@@ -10,6 +11,7 @@ const router = express.Router();
 // GET /products - Get all products with filtering and pagination
 router.get(
   '/',
+  getUserFromToken, // Optional auth to personalize results
   validateQuery(productSchemas.filters),
   ProductController.getProducts
 );
@@ -57,27 +59,32 @@ router.get(
   ProductController.checkAvailability
 );
 
-// Admin routes (authentication required - will be added in Phase 2)
-// For now, these are open but logged
+// Admin routes (authentication and authorization required)
 
-// POST /products - Create new product
+// POST /products - Create new product (Admin only)
 router.post(
   '/',
+  authenticate,
+  adminOnly,
   validate(productSchemas.create),
   ProductController.createProduct
 );
 
-// PUT /products/:id - Update product
+// PUT /products/:id - Update product (Admin only)
 router.put(
   '/:id',
+  authenticate,
+  adminOnly,
   validateParams('id', Joi.string().min(1).max(100).required()),
   validate(productSchemas.update),
   ProductController.updateProduct
 );
 
-// DELETE /products/:id - Delete product (soft delete)
+// DELETE /products/:id - Delete product (Admin only)
 router.delete(
   '/:id',
+  authenticate,
+  adminOnly,
   validateParams('id', Joi.string().min(1).max(100).required()),
   ProductController.deleteProduct
 );

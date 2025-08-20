@@ -1,9 +1,10 @@
-import React, { useState, useMemo } from 'react';
-import { Search, Filter, Grid, List } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { Search, Filter, Grid, List, Loader2 } from 'lucide-react';
 import ProductCard from '../components/products/ProductCard';
 import ProductFilter from '../components/products/ProductFilter';
-import { mockProducts } from '../data/mockProducts';
 import { useLanguage } from '../contexts/LanguageContext';
+import { productApi } from '../services/productService';
+import { Product, ProductFilters } from '../config/api';
 
 const ProductsPage: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -13,39 +14,61 @@ const ProductsPage: React.FC = () => {
   const [sortBy, setSortBy] = useState('name');
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
   const [showFilters, setShowFilters] = useState(false);
+  
+  // API state
+  const [products, setProducts] = useState<Product[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+  const [pagination, setPagination] = useState({
+    page: 1,
+    limit: 60,
+    total: 0,
+    pages: 0
+  });
 
   const { t } = useLanguage();
 
-  const filteredProducts = useMemo(() => {
-    let filtered = mockProducts.filter(product => {
-      const matchesSearch = product.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                           product.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                           product.enamelNumber.toLowerCase().includes(searchTerm.toLowerCase());
-      const matchesCategory = selectedCategory === 'all' || product.category === selectedCategory;
-      const matchesType = selectedType === 'all' || product.type === selectedType;
-      const matchesPrice = product.price >= priceRange[0] && product.price <= priceRange[1];
+  // Fetch products from API
+  useEffect(() => {
+    const fetchProducts = async () => {
+      setLoading(true);
+      setError(null);
       
-      return matchesSearch && matchesCategory && matchesType && matchesPrice;
-    });
-
-    // Sort products
-    filtered.sort((a, b) => {
-      switch (sortBy) {
-        case 'price-low':
-          return a.price - b.price;
-        case 'price-high':
-          return b.price - a.price;
-        case 'name':
-          return a.name.localeCompare(b.name);
-        case 'number':
-          return a.enamelNumber.localeCompare(b.enamelNumber);
-        default:
-          return 0;
+      try {
+        const filters: ProductFilters = {
+          page: pagination.page,
+          limit: pagination.limit,
+          sortBy: sortBy === 'name' ? 'name' : sortBy === 'number' ? 'enamelNumber' : 'price',
+          sortOrder: sortBy === 'price-high' ? 'desc' : 'asc'
+        };
+        
+        if (selectedType !== 'all') {
+          filters.type = selectedType.toUpperCase() as 'TRANSPARENT' | 'OPAQUE' | 'OPALE';
+        }
+        
+        if (searchTerm) {
+          filters.search = searchTerm;
+        }
+        
+        const response = await productApi.getProducts(filters);
+        setProducts(response.products);
+        setPagination(response.pagination);
+      } catch (err) {
+        setError(err instanceof Error ? err.message : 'Failed to load products');
+        console.error('Error fetching products:', err);
+      } finally {
+        setLoading(false);
       }
-    });
+    };
 
-    return filtered;
-  }, [searchTerm, selectedCategory, selectedType, priceRange, sortBy]);
+    fetchProducts();
+  }, [searchTerm, selectedType, sortBy, pagination.page]);
+
+  // Filter products locally for additional filters not supported by API
+  const filteredProducts = products.filter(product => {
+    const matchesPrice = product.price >= priceRange[0] && product.price <= priceRange[1];
+    return matchesPrice;
+  });
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -130,11 +153,26 @@ const ProductsPage: React.FC = () => {
         <div className="flex-1">
           <div className="mb-4 flex justify-between items-center">
             <p className="text-gray-600">
-              {t('products.showing')} {filteredProducts.length} {t('products.of')} {mockProducts.length} {t('products.products')}
+              {loading ? 'Loading...' : `${t('products.showing')} ${filteredProducts.length} ${t('products.of')} ${pagination.total} ${t('products.products')}`}
             </p>
           </div>
 
-          {filteredProducts.length === 0 ? (
+          {error ? (
+            <div className="text-center py-12">
+              <p className="text-red-500 text-lg mb-4">Error: {error}</p>
+              <button
+                onClick={() => window.location.reload()}
+                className="px-4 py-2 bg-red-800 text-white rounded-lg hover:bg-red-900"
+              >
+                Retry
+              </button>
+            </div>
+          ) : loading ? (
+            <div className="text-center py-12">
+              <Loader2 className="h-8 w-8 animate-spin mx-auto mb-4 text-red-800" />
+              <p className="text-gray-500">Loading products...</p>
+            </div>
+          ) : filteredProducts.length === 0 ? (
             <div className="text-center py-12">
               <p className="text-gray-500 text-lg">{t('products.noResults')}</p>
               <button
@@ -152,24 +190,24 @@ const ProductsPage: React.FC = () => {
           ) : (
             <div className="space-y-12">
               {/* Group products by type */}
-              {['transparent', 'opaque', 'opale'].map(type => {
+              {['TRANSPARENT', 'OPAQUE', 'OPALE'].map(type => {
                 const typeProducts = filteredProducts.filter(p => p.type === type);
                 if (typeProducts.length === 0) return null;
 
                 const typeInfo = {
-                  transparent: {
+                  TRANSPARENT: {
                     title: 'Transparent Enamels',
                     description: 'Crystal clear enamels perfect for layering and depth effects',
                     icon: '💎',
                     color: 'from-blue-500 to-cyan-500'
                   },
-                  opaque: {
+                  OPAQUE: {
                     title: 'Opaque Enamels', 
                     description: 'Rich, solid colors with excellent coverage and vibrancy',
                     icon: '🎨',
                     color: 'from-purple-500 to-pink-500'
                   },
-                  opale: {
+                  OPALE: {
                     title: 'Opale Enamels',
                     description: 'Lustrous opalescent effects with unique shimmer properties', 
                     icon: '✨',
@@ -204,7 +242,17 @@ const ProductsPage: React.FC = () => {
                       {typeProducts.map(product => (
                         <ProductCard 
                           key={product.id} 
-                          product={product} 
+                          product={{
+                            ...product,
+                            type: product.type.toLowerCase() as 'transparent' | 'opaque' | 'opale',
+                            description: product.description || `${product.type.toLowerCase()} enamel color`,
+                            colorCode: product.colorCode || product.enamelNumber,
+                            specifications: product.specifications || {
+                              firingTemp: '800-850°C',
+                              mesh: '80-200',
+                              weight: ['25g', '100g']
+                            }
+                          }} 
                           viewMode={viewMode}
                         />
                       ))}

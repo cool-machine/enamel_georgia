@@ -4,6 +4,7 @@ import helmet from 'helmet';
 import morgan from 'morgan';
 import compression from 'compression';
 import rateLimit from 'express-rate-limit';
+import cookieParser from 'cookie-parser';
 
 import { env, isDevelopment } from '@/config/env';
 import { corsConfig } from '@/config/cors';
@@ -13,6 +14,11 @@ import { logger } from '@/utils/logger';
 // Route imports
 import healthRoutes from '@/routes/health';
 import productRoutes from '@/routes/products';
+import authRoutes from '@/routes/auth';
+import cartRoutes from '@/routes/cart';
+import orderRoutes from '@/routes/orders';
+import paymentRoutes from '@/routes/payments';
+import adminRoutes from '@/routes/admin';
 
 const app = express();
 
@@ -43,9 +49,13 @@ app.use(cors(corsConfig));
 // Rate limiting
 app.use('/api/', limiter);
 
-// Body parsing
+// Body parsing (except for Stripe webhook which needs raw body)
+app.use('/api/v1/payments/webhook', express.raw({ type: 'application/json' }));
 app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ extended: true, limit: '10mb' }));
+
+// Cookie parsing
+app.use(cookieParser());
 
 // Compression
 app.use(compression());
@@ -69,7 +79,12 @@ app.use((req, res, next) => {
 
 // API routes
 app.use('/api', healthRoutes);
+app.use('/api/v1/auth', authRoutes);
 app.use('/api/v1/products', productRoutes);
+app.use('/api/v1/cart', cartRoutes);
+app.use('/api/v1/orders', orderRoutes);
+app.use('/api/v1/payments', paymentRoutes);
+app.use('/api/v1/admin', adminRoutes);
 
 // Welcome route
 app.get('/', (req, res) => {
@@ -81,7 +96,12 @@ app.get('/', (req, res) => {
       environment: env.NODE_ENV,
       endpoints: {
         health: '/api/health',
+        auth: '/api/v1/auth',
         products: '/api/v1/products',
+        cart: '/api/v1/cart',
+        orders: '/api/v1/orders',
+        payments: '/api/v1/payments',
+        admin: '/api/v1/admin',
         search: '/api/v1/products/search',
         featured: '/api/v1/products/featured',
         stats: '/api/v1/products/stats'
