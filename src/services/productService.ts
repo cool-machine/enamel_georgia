@@ -103,9 +103,10 @@ class ProductApiService {
   }
   
   // Get single product by ID
-  async getProduct(id: string): Promise<{ product: Product }> {
+  async getProduct(id: string): Promise<Product> {
     const url = `${this.baseUrl}/products/${id}`;
-    return this.fetchWithErrorHandling<{ product: Product }>(url);
+    const response = await this.fetchWithErrorHandling<Product>(url);
+    return response;
   }
   
   // Search products

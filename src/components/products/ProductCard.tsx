@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ShoppingCart, Eye } from 'lucide-react';
-import { Product } from '../../data/mockProducts';
+import { Product } from '../../config/api';
 import { useCart } from '../../contexts/CartContext';
 import { useLanguage } from '../../contexts/LanguageContext';
 
@@ -19,10 +19,10 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, viewMode = 'grid' })
     addItem({
       id: product.id,
       name: product.name,
-      price: product.price,
+      price: parseFloat(product.price.toString()),
       quantity: 1,
-      color: product.enamelNumber,
-      size: '25g',
+      color: product.colorCode || product.enamelNumber,
+      size: product.specifications?.weight?.[0] || '25g',
       image: product.image
     });
   };

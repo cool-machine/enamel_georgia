@@ -1,21 +1,69 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft, ShoppingCart, Heart, Share2, Truck, Shield, RotateCcw } from 'lucide-react';
-import { mockProducts } from '../data/mockProducts';
+import { ArrowLeft, ShoppingCart, Heart, Share2, Truck, Shield, RotateCcw, Loader2 } from 'lucide-react';
+import { productApi } from '../services/productService';
+import { Product } from '../config/api';
 import { useCart } from '../contexts/CartContext';
 
 const ProductDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const [selectedWeight, setSelectedWeight] = useState('25g');
   const [quantity, setQuantity] = useState(1);
+  const [product, setProduct] = useState<Product | null>(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
   const { addItem } = useCart();
 
-  const product = mockProducts.find(p => p.id === id);
+  // Fetch product from API
+  useEffect(() => {
+    const fetchProduct = async () => {
+      if (!id) return;
+      
+      setLoading(true);
+      setError(null);
+      
+      try {
+        const productData = await productApi.getProduct(id);
+        setProduct(productData);
+        
+        // Set default weight if available
+        if (productData.specifications?.weight?.length > 0) {
+          setSelectedWeight(productData.specifications.weight[0]);
+        }
+      } catch (err) {
+        setError(err instanceof Error ? err.message : 'Failed to load product');
+        console.error('Error fetching product:', err);
+      } finally {
+        setLoading(false);
+      }
+    };
 
-  if (!product) {
+    fetchProduct();
+  }, [id]);
+
+  if (loading) {
     return (
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <p className="text-center text-gray-500">Product not found.</p>
+        <div className="text-center py-12">
+          <Loader2 className="h-8 w-8 animate-spin mx-auto mb-4 text-red-800" />
+          <p className="text-gray-500">Loading product...</p>
+        </div>
+      </div>
+    );
+  }
+
+  if (error || !product) {
+    return (
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="text-center py-12">
+          <p className="text-red-500 text-lg mb-4">Error: {error || 'Product not found'}</p>
+          <Link
+            to="/products"
+            className="text-red-800 hover:text-red-900 font-medium"
+          >
+            ← Back to Products
+          </Link>
+        </div>
       </div>
     );
   }
@@ -24,9 +72,9 @@ const ProductDetail: React.FC = () => {
     addItem({
       id: `${product.id}-${selectedWeight}`,
       name: `${product.name} (${selectedWeight})`,
-      price: product.price,
+      price: parseFloat(product.price.toString()),
       quantity,
-      color: product.colorCode,
+      color: product.colorCode || product.enamelNumber,
       size: selectedWeight,
       image: product.image
     });
@@ -166,7 +214,7 @@ const ProductDetail: React.FC = () => {
               Add to Cart
             </button>
             <p className="text-center text-sm text-gray-500">
-              Total: ₾{(product.price * quantity).toFixed(2)}
+              Total: ₾{(parseFloat(product.price.toString()) * quantity).toFixed(2)}
             </p>
           </div>
 
