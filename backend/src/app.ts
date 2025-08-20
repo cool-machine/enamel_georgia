@@ -12,6 +12,7 @@ import { logger } from '@/utils/logger';
 
 // Route imports
 import healthRoutes from '@/routes/health';
+import productRoutes from '@/routes/products';
 
 const app = express();
 
@@ -68,6 +69,7 @@ app.use((req, res, next) => {
 
 // API routes
 app.use('/api', healthRoutes);
+app.use('/api/v1/products', productRoutes);
 
 // Welcome route
 app.get('/', (req, res) => {
@@ -77,6 +79,13 @@ app.get('/', (req, res) => {
     data: {
       version: env.API_VERSION,
       environment: env.NODE_ENV,
+      endpoints: {
+        health: '/api/health',
+        products: '/api/v1/products',
+        search: '/api/v1/products/search',
+        featured: '/api/v1/products/featured',
+        stats: '/api/v1/products/stats'
+      },
       documentation: '/api/health/status'
     }
   });
