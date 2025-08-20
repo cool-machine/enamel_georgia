@@ -1,0 +1,591 @@
+{
+  "summary": {
+    "total_processed": 32,
+    "successful_downloads": 31,
+    "failed_downloads": 1,
+    "skipped": 0
+  },
+  "by_type": {
+    "transparent": 0,
+    "opaque": 31,
+    "opal": 0,
+    "unknown": 0
+  },
+  "detailed_results": {
+    "downloaded": [
+      {
+        "color": "36",
+        "type": "opaque",
+        "filename": "36_hq.jpg",
+        "filepath": "public/opaques/36_hq.jpg",
+        "title": "Black 36 Powder",
+        "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/poudre/opq-0036.jpg",
+        "file_size": 9421
+      },
+      {
+        "color": "36",
+        "type": "opaque",
+        "filename": "36_hq.jpg",
+        "filepath": "public/opaques/36_hq.jpg",
+        "title": "Black 36 Lump",
+        "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/morceaux/opq-0036.jpg",
+        "file_size": 9421
+      },
+      {
+        "color": "59",
+        "type": "opaque",
+        "filename": "59_hq.jpg",
+        "filepath": "public/opaques/59_hq.jpg",
+        "title": "White 59P Grain",
+        "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/grains/opq-0059.jpg",
+        "file_size": 9421
+      },
+      {
+        "color": "59",
+        "type": "opaque",
+        "filename": "59_hq.jpg",
+        "filepath": "public/opaques/59_hq.jpg",
+        "title": "White 59P Lump",
+        "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/o/p/opq-0059_m.jpg",
+        "file_size": 2760
+      },
+      {
+        "color": "62",
+        "type": "opaque",
+        "filename": "62_hq.jpg",
+        "filepath": "public/opaques/62_hq.jpg",
+        "title": "Blue 62/F Powder",
+        "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/o/p/opq-0062.jpg",
+        "file_size": 20010
+      },
+      {
+        "color": "66",
+        "type": "opaque",
+        "filename": "66_hq.jpg",
+        "filepath": "public/opaques/66_hq.jpg",
+        "title": "Blue 66 / F Powder",
+        "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/o/p/opq-0066_2.jpg",
+        "file_size": 8998
+      },
+      {
+        "color": "66",
+        "type": "opaque",
+        "filename": "66_hq.jpg",
+        "filepath": "public/opaques/66_hq.jpg",
+        "title": "Blue 66 / F Grains",
+        "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/o/p/opq-0066_1.jpg",
+        "file_size": 8998
+      },
+      {
+        "color": "66",
+        "type": "opaque",
+        "filename": "66_hq.jpg",
+        "filepath": "public/opaques/66_hq.jpg",
+        "title": "Blue 66 / F Lump",
+        "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/o/p/opq-0066.jpg",
+        "file_size": 8998
+      },
+      {
+        "color": "68",
+        "type": "opaque",
+        "filename": "68_hq.jpg",
+        "filepath": "public/opaques/68_hq.jpg",
+        "title": "Blue 68 /F Lead free",
+        "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/o/p/opq-0068.jpg",
+        "file_size": 12163
+      },
+      {
+        "color": "71",
+        "type": "opaque",
+        "filename": "71_hq.jpg",
+        "filepath": "public/opaques/71_hq.jpg",
+        "title": "Gray 71 Powder",
+        "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/o/p/opq-0071_2.jpg",
+        "file_size": 13072
+      },
+      {
+        "color": "75",
+        "type": "opaque",
+        "filename": "75_hq.jpg",
+        "filepath": "public/opaques/75_hq.jpg",
+        "title": "Yellow 75 Powder",
+        "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/o/p/opq-0075.jpg",
+        "file_size": 17623
+      },
+      {
+        "color": "80",
+        "type": "opaque",
+        "filename": "80_hq.jpg",
+        "filepath": "public/opaques/80_hq.jpg",
+        "title": "Turquoise 80/F Powder - 800\u00b0C-840\u00b0C",
+        "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/o/p/opq-0080.jpg",
+        "file_size": 10290
+      },
+      {
+        "color": "81",
+        "type": "opaque",
+        "filename": "81_hq.jpg",
+        "filepath": "public/opaques/81_hq.jpg",
+        "title": "Turquoise 81 / F Powder Leadfree",
+        "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/o/p/opq-0081.jpg",
+        "file_size": 12889
+      },
+      {
+        "color": "81",
+        "type": "opaque",
+        "filename": "81_hq.jpg",
+        "filepath": "public/opaques/81_hq.jpg",
+        "title": "Turquoise 81 / F Lump",
+        "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/morceaux/opq-0081.jpg",
+        "file_size": 9421
+      },
+      {
+        "color": "83",
+        "type": "opaque",
+        "filename": "83_hq.jpg",
+        "filepath": "public/opaques/83_hq.jpg",
+        "title": "Green 83 Powder",
+        "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/s/c/sc220_chris14012316010.jpg",
+        "file_size": 13197
+      },
+      {
+        "color": "83",
+        "type": "opaque",
+        "filename": "83_hq.jpg",
+        "filepath": "public/opaques/83_hq.jpg",
+        "title": "Green 83 Lump",
+        "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/s/c/sc220_chris14012316010_2.jpg",
+        "file_size": 13197
+      },
+      {
+        "color": "84",
+        "type": "opaque",
+        "filename": "84_hq.jpg",
+        "filepath": "public/opaques/84_hq.jpg",
+        "title": "Green 84 Lump",
+        "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/8/4/84_edited_1.jpg",
+        "file_size": 32607
+      },
+      {
+        "color": "95",
+        "type": "opaque",
+        "filename": "95_hq.jpg",
+        "filepath": "public/opaques/95_hq.jpg",
+        "title": "Yellow 95 Powder",
+        "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/o/p/opq-0095.jpg",
+        "file_size": 11917
+      },
+      {
+        "color": "97",
+        "type": "opaque",
+        "filename": "97_hq.jpg",
+        "filepath": "public/opaques/97_hq.jpg",
+        "title": "White tinted 97 / P Powder",
+        "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/o/p/opq-0097.jpg",
+        "file_size": 3371
+      },
+      {
+        "color": "272",
+        "type": "opaque",
+        "filename": "272_hq.jpg",
+        "filepath": "public/opaques/272_hq.jpg",
+        "title": "Blue 272 powder (150g)",
+        "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/2/7/272_edited.jpg",
+        "file_size": 20294
+      },
+      {
+        "color": "55",
+        "type": "opaque",
+        "filename": "55_hq.jpg",
+        "filepath": "public/opaques/55_hq.jpg",
+        "title": "Black 55F Lump",
+        "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/o/p/opq-0055f_1.jpg",
+        "file_size": 17536
+      },
+      {
+        "color": "268",
+        "type": "opaque",
+        "filename": "268_hq.jpg",
+        "filepath": "public/opaques/268_hq.jpg",
+        "title": "Brown 268 (150 gr) Powder",
+        "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/2/6/268_2_2.jpg",
+        "file_size": 34266
+      },
+      {
+        "color": "269",
+        "type": "opaque",
+        "filename": "269_hq.jpg",
+        "filepath": "public/opaques/269_hq.jpg",
+        "title": "Brown 269 (150 gr)",
+        "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/2/6/269_edited.jpg",
+        "file_size": 35940
+      },
+      {
+        "color": "85",
+        "type": "opaque",
+        "filename": "85_hq.jpg",
+        "filepath": "public/opaques/85_hq.jpg",
+        "title": "Green 85 / F lead free powder - 830\u00b0C",
+        "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/8/5/85f.jpg",
+        "file_size": 29992
+      },
+      {
+        "color": "79",
+        "type": "opaque",
+        "filename": "79_hq.jpg",
+        "filepath": "public/opaques/79_hq.jpg",
+        "title": "Yellow 79 powder",
+        "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/7/9/79.jpg",
+        "file_size": 27082
+      },
+      {
+        "color": "283",
+        "type": "opaque",
+        "filename": "283_hq.jpg",
+        "filepath": "public/opaques/283_hq.jpg",
+        "title": "Rose 283 en poudre",
+        "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/2/8/283_2.jpg",
+        "file_size": 28941
+      },
+      {
+        "color": "126",
+        "type": "opaque",
+        "filename": "126_hq.jpg",
+        "filepath": "public/opaques/126_hq.jpg",
+        "title": "Turquoise opaque clair 126",
+        "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/1/2/126_1.jpg",
+        "file_size": 32613
+      },
+      {
+        "color": "127",
+        "type": "opaque",
+        "filename": "127_hq.jpg",
+        "filepath": "public/opaques/127_hq.jpg",
+        "title": "Turquoise opaque fonc\u00e9 127",
+        "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/1/2/127_edited_2.jpg",
+        "file_size": 35120
+      },
+      {
+        "color": "271",
+        "type": "opaque",
+        "filename": "271_hq.jpg",
+        "filepath": "public/opaques/271_hq.jpg",
+        "title": "Turquoise 271 poudre",
+        "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/2/7/271_edited_2.jpg",
+        "file_size": 30529
+      },
+      {
+        "color": "56",
+        "type": "opaque",
+        "filename": "56_hq.jpg",
+        "filepath": "public/opaques/56_hq.jpg",
+        "title": "Black 56 Powder 800-840\u00b0C",
+        "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/o/p/opq-0055f_4_1.jpg",
+        "file_size": 17536
+      },
+      {
+        "color": "299",
+        "type": "opaque",
+        "filename": "299_hq.jpg",
+        "filepath": "public/opaques/299_hq.jpg",
+        "title": "Pink 299/F Powder",
+        "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/2/9/299f_1.jpg",
+        "file_size": 24940
+      }
+    ],
+    "failed": [
+      {
+        "url": "https://www.emaux-soyer.com/en/orange-621-150g.html",
+        "error": "No suitable images found",
+        "title": "Orange 621 powder (150g)"
+      }
+    ],
+    "skipped": [],
+    "by_type": {
+      "transparent": [],
+      "opaque": [
+        {
+          "color": "36",
+          "type": "opaque",
+          "filename": "36_hq.jpg",
+          "filepath": "public/opaques/36_hq.jpg",
+          "title": "Black 36 Powder",
+          "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/poudre/opq-0036.jpg",
+          "file_size": 9421
+        },
+        {
+          "color": "36",
+          "type": "opaque",
+          "filename": "36_hq.jpg",
+          "filepath": "public/opaques/36_hq.jpg",
+          "title": "Black 36 Lump",
+          "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/morceaux/opq-0036.jpg",
+          "file_size": 9421
+        },
+        {
+          "color": "59",
+          "type": "opaque",
+          "filename": "59_hq.jpg",
+          "filepath": "public/opaques/59_hq.jpg",
+          "title": "White 59P Grain",
+          "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/grains/opq-0059.jpg",
+          "file_size": 9421
+        },
+        {
+          "color": "59",
+          "type": "opaque",
+          "filename": "59_hq.jpg",
+          "filepath": "public/opaques/59_hq.jpg",
+          "title": "White 59P Lump",
+          "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/o/p/opq-0059_m.jpg",
+          "file_size": 2760
+        },
+        {
+          "color": "62",
+          "type": "opaque",
+          "filename": "62_hq.jpg",
+          "filepath": "public/opaques/62_hq.jpg",
+          "title": "Blue 62/F Powder",
+          "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/o/p/opq-0062.jpg",
+          "file_size": 20010
+        },
+        {
+          "color": "66",
+          "type": "opaque",
+          "filename": "66_hq.jpg",
+          "filepath": "public/opaques/66_hq.jpg",
+          "title": "Blue 66 / F Powder",
+          "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/o/p/opq-0066_2.jpg",
+          "file_size": 8998
+        },
+        {
+          "color": "66",
+          "type": "opaque",
+          "filename": "66_hq.jpg",
+          "filepath": "public/opaques/66_hq.jpg",
+          "title": "Blue 66 / F Grains",
+          "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/o/p/opq-0066_1.jpg",
+          "file_size": 8998
+        },
+        {
+          "color": "66",
+          "type": "opaque",
+          "filename": "66_hq.jpg",
+          "filepath": "public/opaques/66_hq.jpg",
+          "title": "Blue 66 / F Lump",
+          "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/o/p/opq-0066.jpg",
+          "file_size": 8998
+        },
+        {
+          "color": "68",
+          "type": "opaque",
+          "filename": "68_hq.jpg",
+          "filepath": "public/opaques/68_hq.jpg",
+          "title": "Blue 68 /F Lead free",
+          "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/o/p/opq-0068.jpg",
+          "file_size": 12163
+        },
+        {
+          "color": "71",
+          "type": "opaque",
+          "filename": "71_hq.jpg",
+          "filepath": "public/opaques/71_hq.jpg",
+          "title": "Gray 71 Powder",
+          "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/o/p/opq-0071_2.jpg",
+          "file_size": 13072
+        },
+        {
+          "color": "75",
+          "type": "opaque",
+          "filename": "75_hq.jpg",
+          "filepath": "public/opaques/75_hq.jpg",
+          "title": "Yellow 75 Powder",
+          "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/o/p/opq-0075.jpg",
+          "file_size": 17623
+        },
+        {
+          "color": "80",
+          "type": "opaque",
+          "filename": "80_hq.jpg",
+          "filepath": "public/opaques/80_hq.jpg",
+          "title": "Turquoise 80/F Powder - 800\u00b0C-840\u00b0C",
+          "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/o/p/opq-0080.jpg",
+          "file_size": 10290
+        },
+        {
+          "color": "81",
+          "type": "opaque",
+          "filename": "81_hq.jpg",
+          "filepath": "public/opaques/81_hq.jpg",
+          "title": "Turquoise 81 / F Powder Leadfree",
+          "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/o/p/opq-0081.jpg",
+          "file_size": 12889
+        },
+        {
+          "color": "81",
+          "type": "opaque",
+          "filename": "81_hq.jpg",
+          "filepath": "public/opaques/81_hq.jpg",
+          "title": "Turquoise 81 / F Lump",
+          "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/morceaux/opq-0081.jpg",
+          "file_size": 9421
+        },
+        {
+          "color": "83",
+          "type": "opaque",
+          "filename": "83_hq.jpg",
+          "filepath": "public/opaques/83_hq.jpg",
+          "title": "Green 83 Powder",
+          "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/s/c/sc220_chris14012316010.jpg",
+          "file_size": 13197
+        },
+        {
+          "color": "83",
+          "type": "opaque",
+          "filename": "83_hq.jpg",
+          "filepath": "public/opaques/83_hq.jpg",
+          "title": "Green 83 Lump",
+          "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/s/c/sc220_chris14012316010_2.jpg",
+          "file_size": 13197
+        },
+        {
+          "color": "84",
+          "type": "opaque",
+          "filename": "84_hq.jpg",
+          "filepath": "public/opaques/84_hq.jpg",
+          "title": "Green 84 Lump",
+          "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/8/4/84_edited_1.jpg",
+          "file_size": 32607
+        },
+        {
+          "color": "95",
+          "type": "opaque",
+          "filename": "95_hq.jpg",
+          "filepath": "public/opaques/95_hq.jpg",
+          "title": "Yellow 95 Powder",
+          "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/o/p/opq-0095.jpg",
+          "file_size": 11917
+        },
+        {
+          "color": "97",
+          "type": "opaque",
+          "filename": "97_hq.jpg",
+          "filepath": "public/opaques/97_hq.jpg",
+          "title": "White tinted 97 / P Powder",
+          "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/o/p/opq-0097.jpg",
+          "file_size": 3371
+        },
+        {
+          "color": "272",
+          "type": "opaque",
+          "filename": "272_hq.jpg",
+          "filepath": "public/opaques/272_hq.jpg",
+          "title": "Blue 272 powder (150g)",
+          "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/2/7/272_edited.jpg",
+          "file_size": 20294
+        },
+        {
+          "color": "55",
+          "type": "opaque",
+          "filename": "55_hq.jpg",
+          "filepath": "public/opaques/55_hq.jpg",
+          "title": "Black 55F Lump",
+          "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/o/p/opq-0055f_1.jpg",
+          "file_size": 17536
+        },
+        {
+          "color": "268",
+          "type": "opaque",
+          "filename": "268_hq.jpg",
+          "filepath": "public/opaques/268_hq.jpg",
+          "title": "Brown 268 (150 gr) Powder",
+          "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/2/6/268_2_2.jpg",
+          "file_size": 34266
+        },
+        {
+          "color": "269",
+          "type": "opaque",
+          "filename": "269_hq.jpg",
+          "filepath": "public/opaques/269_hq.jpg",
+          "title": "Brown 269 (150 gr)",
+          "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/2/6/269_edited.jpg",
+          "file_size": 35940
+        },
+        {
+          "color": "85",
+          "type": "opaque",
+          "filename": "85_hq.jpg",
+          "filepath": "public/opaques/85_hq.jpg",
+          "title": "Green 85 / F lead free powder - 830\u00b0C",
+          "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/8/5/85f.jpg",
+          "file_size": 29992
+        },
+        {
+          "color": "79",
+          "type": "opaque",
+          "filename": "79_hq.jpg",
+          "filepath": "public/opaques/79_hq.jpg",
+          "title": "Yellow 79 powder",
+          "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/7/9/79.jpg",
+          "file_size": 27082
+        },
+        {
+          "color": "283",
+          "type": "opaque",
+          "filename": "283_hq.jpg",
+          "filepath": "public/opaques/283_hq.jpg",
+          "title": "Rose 283 en poudre",
+          "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/2/8/283_2.jpg",
+          "file_size": 28941
+        },
+        {
+          "color": "126",
+          "type": "opaque",
+          "filename": "126_hq.jpg",
+          "filepath": "public/opaques/126_hq.jpg",
+          "title": "Turquoise opaque clair 126",
+          "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/1/2/126_1.jpg",
+          "file_size": 32613
+        },
+        {
+          "color": "127",
+          "type": "opaque",
+          "filename": "127_hq.jpg",
+          "filepath": "public/opaques/127_hq.jpg",
+          "title": "Turquoise opaque fonc\u00e9 127",
+          "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/1/2/127_edited_2.jpg",
+          "file_size": 35120
+        },
+        {
+          "color": "271",
+          "type": "opaque",
+          "filename": "271_hq.jpg",
+          "filepath": "public/opaques/271_hq.jpg",
+          "title": "Turquoise 271 poudre",
+          "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/2/7/271_edited_2.jpg",
+          "file_size": 30529
+        },
+        {
+          "color": "56",
+          "type": "opaque",
+          "filename": "56_hq.jpg",
+          "filepath": "public/opaques/56_hq.jpg",
+          "title": "Black 56 Powder 800-840\u00b0C",
+          "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/o/p/opq-0055f_4_1.jpg",
+          "file_size": 17536
+        },
+        {
+          "color": "299",
+          "type": "opaque",
+          "filename": "299_hq.jpg",
+          "filepath": "public/opaques/299_hq.jpg",
+          "title": "Pink 299/F Powder",
+          "image_url": "https://www.emaux-soyer.com/media/catalog/product/cache/32da777feb9d2f52e427ce640ea952cf/2/9/299f_1.jpg",
+          "file_size": 24940
+        }
+      ],
+      "opal": [],
+      "unknown": []
+    }
+  }
+}
