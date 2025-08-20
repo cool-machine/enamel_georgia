@@ -102,7 +102,7 @@ export const productSchemas = {
     page: Joi.number().integer().min(1).default(1),
     limit: Joi.number().integer().min(1).max(100).default(20),
     search: Joi.string().min(1).max(100).optional(),
-    type: Joi.string().valid('transparent', 'opaque', 'opale').optional(),
+    type: Joi.string().valid('TRANSPARENT', 'OPAQUE', 'OPALE').optional(),
     category: Joi.string().min(1).max(100).optional(),
     minPrice: Joi.number().positive().optional(),
     maxPrice: Joi.number().positive().optional(),
