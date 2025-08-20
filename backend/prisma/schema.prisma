@@ -1,0 +1,231 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// User Management
+model User {
+  id                String    @id @default(cuid())
+  email             String    @unique
+  passwordHash      String
+  firstName         String
+  lastName          String
+  role              UserRole  @default(CUSTOMER)
+  isEmailVerified   Boolean   @default(false)
+  emailVerifiedAt   DateTime?
+  resetToken        String?
+  resetTokenExpires DateTime?
+  lastLoginAt       DateTime?
+  createdAt         DateTime  @default(now())
+  updatedAt         DateTime  @updatedAt
+
+  // Relations
+  orders            Order[]
+  carts             Cart[]
+  addresses         Address[]
+
+  @@map("users")
+}
+
+enum UserRole {
+  CUSTOMER
+  ADMIN
+}
+
+// Address Management
+model Address {
+  id         String  @id @default(cuid())
+  userId     String
+  type       AddressType
+  firstName  String
+  lastName   String
+  company    String?
+  address1   String
+  address2   String?
+  city       String
+  state      String
+  postalCode String
+  country    String  @default("GE") // Georgia default
+  phone      String?
+  isDefault  Boolean @default(false)
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  // Relations
+  user                User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  shippingOrders      Order[] @relation("ShippingAddress")
+  billingOrders       Order[] @relation("BillingAddress")
+
+  @@map("addresses")
+}
+
+enum AddressType {
+  SHIPPING
+  BILLING
+  BOTH
+}
+
+// Product Catalog
+model Product {
+  id            String      @id @default(cuid())
+  name          String
+  description   String
+  price         Decimal     @db.Decimal(10, 2)
+  colorCode     String?     // Can be empty for real image display
+  category      String
+  type          EnamelType
+  image         String      // Path to image file
+  inStock       Boolean     @default(true)
+  quantity      Int         @default(0)
+  enamelNumber  String      @unique // e.g., "T-272_hq", "O-RUBIS31_hq"
+  
+  // Specifications as JSON
+  specifications Json        // { firingTemp: "780-820°C", mesh: "80 mesh", weight: ["25g", "100g"] }
+  
+  // SEO and metadata
+  slug          String      @unique
+  metaTitle     String?
+  metaDescription String?
+  
+  // Admin fields
+  isActive      Boolean     @default(true)
+  sortOrder     Int         @default(0)
+  createdAt     DateTime    @default(now())
+  updatedAt     DateTime    @updatedAt
+
+  // Relations
+  cartItems     CartItem[]
+  orderItems    OrderItem[]
+
+  @@index([type, category])
+  @@index([inStock, isActive])
+  @@map("products")
+}
+
+enum EnamelType {
+  TRANSPARENT
+  OPAQUE
+  OPALE
+}
+
+// Shopping Cart Management
+model Cart {
+  id        String     @id @default(cuid())
+  userId    String?    // Optional for guest carts
+  sessionId String?    // For guest users
+  createdAt DateTime   @default(now())
+  updatedAt DateTime   @updatedAt
+
+  // Relations
+  user      User?      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  items     CartItem[]
+
+  @@index([userId])
+  @@index([sessionId])
+  @@map("carts")
+}
+
+model CartItem {
+  id        String   @id @default(cuid())
+  cartId    String
+  productId String
+  quantity  Int      @default(1)
+  addedAt   DateTime @default(now())
+
+  // Relations
+  cart      Cart     @relation(fields: [cartId], references: [id], onDelete: Cascade)
+  product   Product  @relation(fields: [productId], references: [id], onDelete: Cascade)
+
+  @@unique([cartId, productId]) // Prevent duplicate products in same cart
+  @@map("cart_items")
+}
+
+// Order Management
+model Order {
+  id                String      @id @default(cuid())
+  userId            String
+  orderNumber       String      @unique // Human-readable order number
+  status            OrderStatus @default(PENDING)
+  
+  // Pricing
+  subtotal          Decimal     @db.Decimal(10, 2)
+  shippingCost      Decimal     @db.Decimal(10, 2) @default(0)
+  taxAmount         Decimal     @db.Decimal(10, 2) @default(0)
+  discountAmount    Decimal     @db.Decimal(10, 2) @default(0)
+  total             Decimal     @db.Decimal(10, 2)
+  
+  // Addresses
+  shippingAddressId String
+  billingAddressId  String?
+  
+  // Payment
+  paymentMethod     String?     // 'stripe', 'bank_transfer', etc.
+  paymentIntentId   String?     // Stripe payment intent ID
+  paidAt            DateTime?
+  
+  // Fulfillment
+  shippedAt         DateTime?
+  deliveredAt       DateTime?
+  trackingNumber    String?
+  
+  // Admin notes
+  notes             String?
+  
+  createdAt         DateTime    @default(now())
+  updatedAt         DateTime    @updatedAt
+
+  // Relations
+  user              User        @relation(fields: [userId], references: [id])
+  items             OrderItem[]
+  shippingAddress   Address     @relation("ShippingAddress", fields: [shippingAddressId], references: [id])
+  billingAddress    Address?    @relation("BillingAddress", fields: [billingAddressId], references: [id])
+
+  @@index([userId])
+  @@index([status])
+  @@index([createdAt])
+  @@map("orders")
+}
+
+enum OrderStatus {
+  PENDING
+  PAID
+  PROCESSING
+  SHIPPED
+  DELIVERED
+  CANCELLED
+  REFUNDED
+}
+
+model OrderItem {
+  id        String  @id @default(cuid())
+  orderId   String
+  productId String
+  quantity  Int
+  unitPrice Decimal @db.Decimal(10, 2) // Price at time of order
+  total     Decimal @db.Decimal(10, 2) // quantity * unitPrice
+
+  // Relations
+  order     Order   @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  product   Product @relation(fields: [productId], references: [id])
+
+  @@map("order_items")
+}
+
+// System Configuration
+model Setting {
+  id        String   @id @default(cuid())
+  key       String   @unique
+  value     String
+  type      String   @default("string") // string, number, boolean, json
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("settings")
+}

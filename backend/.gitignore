@@ -114,3 +114,20 @@ prisma/migrations/
 test-results/
 playwright-report/
 playwright/.cache/
+
+# AI/Agentic Code Writer Providers
+*claude*
+*anthropic*
+*openai*
+*gpt*
+*copilot*
+*cursor*
+*bolt*
+*windsurf*
+*replit*
+*codeium*
+.claude/
+.cursor/
+.windsurf/
+.bolt/
+CLAUDE.md

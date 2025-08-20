@@ -31,6 +31,15 @@ cp .env.example .env
 # Edit .env with your configuration
 nano .env
 
+# Setup database (PostgreSQL)
+npm run db:setup
+
+# Run database migrations
+npm run db:migrate
+
+# Seed with 217 enamel products
+npm run db:seed
+
 # Start development server
 npm run dev
 ```
@@ -147,13 +156,14 @@ Expected response:
 - Error handling
 - Logging system
 
-### 🔄 Phase 1.2 - Database Setup (NEXT)
-- PostgreSQL schema design
-- Prisma ORM setup
-- Database migrations
-- Product models
+### ✅ Phase 1.2 - Database Setup (COMPLETED)
+- PostgreSQL schema with Prisma ORM
+- Product catalog (217 enamel colors)
+- User management system
+- Cart and order models
+- Database seeding scripts
 
-### 📅 Phase 1.3 - API Endpoints
+### 🔄 Phase 1.3 - API Endpoints (NEXT)
 - Product CRUD operations
 - Data validation
 - Filtering and pagination
